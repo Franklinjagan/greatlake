@@ -1,2 +1,84 @@
 
-<%= render_url 'http://beacon-learning.herokuapp.com/pgpba/application' %>
+
+<div style="border:#b7b0b0 1px solid; width:1000px; margin:0px auto;">
+<form accept-charset="UTF-8" action="http://beacon-learning.herokuapp.com/certified_program_users" class="simple_form new_certified_program_user" enctype="multipart/form-data" id="new_certified_program_user" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="iY8NO+KDTCa5hRgN12r5e3nBO6kAh3m5+FxhQv2bbGI="></div>
+<table >
+<tbody><tr><td><label for="certified_program_user_name">Name*</label></td><td><input id="certified_program_user_name" name="certified_program_user[name]" required="required" size="30" type="text"></td>
+<td><label for="certified_program_user_upload">Upload your photograph*</label></td><td><input id="certified_program_user_upload" name="certified_program_user[upload]" type="file"></td></tr>
+<tr><td><label for="certified_program_user_gender">Gender*</label></td><td><input id="certified_program_user_gender_male" name="certified_program_user[gender]" type="radio" value="male">Male
+<input id="certified_program_user_gender_female" name="certified_program_user[gender]" type="radio" value="female">Female
+</td></tr>
+<tr><td><label for="certified_program_user_date_of_birth">Date of Birth*</label></td><td><div class="input-append date datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy"><input id="certified_program_user_date_of_birth" name="certified_program_user[date_of_birth]" size="30" type="text"><span class="add-on"><i class="icon-th"></i></span>
+  </div></td><td><label for="certified_program_user_marital_status">Marital Status*</label></td><td><input id="certified_program_user_marital_status_single" name="certified_program_user[marital_status]" type="radio" value="Single">Single
+<input id="certified_program_user_marital_status_married" name="certified_program_user[marital_status]" type="radio" value="Married">Married
+</td></tr>
+
+<tr><td><label for="certified_program_user_father_name">Father's Name*</label></td><td><input id="certified_program_user_father_name" name="certified_program_user[father_name]" size="30" type="text"></td><td><label for="certified_program_user_father_occupation">Father's Occupation*</label></td><td><input id="certified_program_user_father_occupation" name="certified_program_user[father_occupation]" size="30" type="text"></td></tr>
+<tr><td><label for="certified_program_user_mother_name">Mother's Name*</label></td><td><input id="certified_program_user_mother_name" name="certified_program_user[mother_name]" size="30" type="text"></td><td><label for="certified_program_user_mother_occupation">Mother's Occupation*</label></td><td><input id="certified_program_user_mother_occupation" name="certified_program_user[mother_occupation]" size="30" type="text"></td></tr>
+<tr><td><label for="certified_program_user_Nationality">Nationality*</label></td><td><input id="certified_program_user_Nationality" name="certified_program_user[Nationality]" size="30" type="text"></td><td></td><td></td></tr>
+<tr><td><label for="certified_program_user_mailing_address">Mailing Address*</label></td><td colspan="3"><input id="certified_program_user_mailing_address" name="certified_program_user[mailing_address]" size="30" type="text"></td><td></td><td></td></tr>
+<tr><td><label for="certified_program_user_mobile">Mobile*</label></td>
+      <td><input id="certified_program_user_mobile" name="certified_program_user[mobile]" size="30" type="text"></td><td><label for="certified_program_user_landline">Landline</label></td>
+      <td><input id="certified_program_user_landline" name="certified_program_user[landline]" size="30" type="text"></td></tr>
+<tr><td><label for="certified_program_user_email">E-mail Id*</label></td>
+      <td><input id="certified_program_user_email" name="certified_program_user[email]" size="30" type="text"></td><td></td><td></td>
+</tr></tbody></table>
+<h4>Academic Qualifications*</h4><table >
+     <tbody><tr><th>  Qualification</th><th>Degree</th><th>Discipline#</th><th>School/ College</th><th>Board/ University</th><th>Passing Year</th><th>%/ CGPA</th></tr>
+<tr><td>Post-Graduation(If any)</td><td><input id="certified_program_user_pg_degree" name="certified_program_user[pg_degree]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_pg_discipline" name="certified_program_user[pg_discipline]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_pg_college" name="certified_program_user[pg_college]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_pg_university" name="certified_program_user[pg_university]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_pg_year" name="certified_program_user[pg_year]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_pg_cpga" name="certified_program_user[pg_cpga]" size="30" style="width:120px;" type="text"></td></tr>
+<tr><td>Graduation*</td><td><input id="certified_program_user_gr_degree" name="certified_program_user[gr_degree]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_gr_discipline" name="certified_program_user[gr_discipline]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_gr_college" name="certified_program_user[gr_college]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_gr_university" name="certified_program_user[gr_university]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_gr_year" name="certified_program_user[gr_year]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_gr_cpga" name="certified_program_user[gr_cpga]" size="30" style="width:120px;" type="text"></td></tr>
+<tr><td>Higher Secondary (XII)*</td><td><input id="certified_program_user_hsc_degree" name="certified_program_user[hsc_degree]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_hsc_discipline" name="certified_program_user[hsc_discipline]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_hsc_college" name="certified_program_user[hsc_college]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_hsc_university" name="certified_program_user[hsc_university]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_hsc_year" name="certified_program_user[hsc_year]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_hsc_cpga" name="certified_program_user[hsc_cpga]" size="30" style="width:120px;" type="text"></td></tr>
+<tr><td>Secondary (X)*</td><td><input id="certified_program_user_sc_degree" name="certified_program_user[sc_degree]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_sc_discipline" name="certified_program_user[sc_discipline]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_sc_college" name="certified_program_user[sc_college]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_sc_university" name="certified_program_user[sc_university]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_sc_year" name="certified_program_user[sc_year]" size="30" style="width:120px;" type="text"></td><td><input id="certified_program_user_sc_cpga" name="certified_program_user[sc_cpga]" size="30" style="width:120px;" type="text"></td></tr>
+<tr><td colspan="3"># Branch of Engineering/ Science/ Arts/ Commerce/ Other</td></tr>
+
+</tbody></table>
+<table>
+
+<tbody><tr><td>Total Work Experience</td><td><select id="certified_program_user_experience" name="certified_program_user[experience]"><option value="1">select</option>
+<option value="0">0</option>
+<option value="0-1 year">0-1 year</option>
+<option value="1-3 year">1-3 year</option>
+<option value="3-5 years">3-5 years</option>
+<option value="&lt;5 years">&lt;5 years</option></select>
+</td></tr>
+<tr><td>Current Annual Salary (CTC)</td><td><select id="certified_program_user_ctc" name="certified_program_user[ctc]"><option value="1">select</option>
+<option value="0">0</option>
+<option value="0-1 lakh">0-1 lakh</option>
+<option value="1-3 lakhs">1-3 lakhs</option>
+<option value="3-5 lakhs">3-5 lakhs</option>
+<option value="&lt;5 lakhs">&lt;5 lakhs</option></select>
+</td></tr>
+</tbody></table>
+<h4>Work Experience Details</h4><table >
+    <tbody><tr><td></td><td>Organization</td><td>Designation</td><td>Nature of Work</td><td>From(MM/YYYY)</td><td>To(MM/YYYY)</td></tr>
+    <tr><td>a</td><td><input id="certified_program_user_organization_a" name="certified_program_user[organization_a]" size="30" style="width:150px;" type="text"></td><td><input id="certified_program_user_designation_a" name="certified_program_user[designation_a]" size="30" style="width:150px;" type="text"></td><td><input id="certified_program_user_nature_of_work_a" name="certified_program_user[nature_of_work_a]" size="30" style="width:150px;" type="text"></td><td><div class="input-append date datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy"><input id="certified_program_user_from_a" name="certified_program_user[from_a]" size="30" style="width:100px;" type="text"><span class="add-on"><i class="icon-th"></i></span>
+  </div></td><td><div class="input-append date datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy"><input id="certified_program_user_to_a" name="certified_program_user[to_a]" size="30" style="width:100px;" type="text"><span class="add-on"><i class="icon-th"></i></span>
+  </div></td></tr>
+    <tr><td>b</td><td><input id="certified_program_user_organization_b" name="certified_program_user[organization_b]" size="30" style="width:150px;" type="text"></td><td><input id="certified_program_user_designation_b" name="certified_program_user[designation_b]" size="30" style="width:150px;" type="text"></td><td><input id="certified_program_user_nature_of_work_b" name="certified_program_user[nature_of_work_b]" size="30" style="width:150px;" type="text"></td><td><div class="input-append date datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy"><input id="certified_program_user_from_b" name="certified_program_user[from_b]" size="30" style="width:100px;" type="text"><span class="add-on"><i class="icon-th"></i></span>
+  </div></td><td><div class="input-append date datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy"><input id="certified_program_user_to_b" name="certified_program_user[to_b]" size="30" style="width:100px;" type="text"><span class="add-on"><i class="icon-th"></i></span>
+  </div></td></tr></tbody></table>
+  <h4>Awards and Achievements</h4><table >
+<tbody><tr><td>a</td><td>Academic Honors</td><td><input id="certified_program_user_academic_honor_a" name="certified_program_user[academic_honor_a]" size="30" style="width:600px;" type="text"></td></tr>
+<tr><td></td><td></td><td><input id="certified_program_user_academic_honor_b" name="certified_program_user[academic_honor_b]" size="30" style="width:600px;" type="text"></td></tr>
+<tr><td>b</td><td> Extracurricular</td><td><input id="certified_program_user_extracuricular_a" name="certified_program_user[extracuricular_a]" size="30" style="width:600px;" type="text"></td></tr>
+<tr><td></td><td></td><td><input id="certified_program_user_extracuricular_b" name="certified_program_user[extracuricular_b]" size="30" style="width:600px;" type="text"></td></tr>
+<tr><td>c</td><td>Others (Specify)</td><td><input id="certified_program_user_others_a" name="certified_program_user[others_a]" size="30" style="width:600px;" type="text"></td></tr>
+<tr><td></td><td></td><td><input id="certified_program_user_others_b" name="certified_program_user[others_b]" size="30" style="width:600px;" type="text"></td></tr>
+  </tbody></table>
+    <h4>Please choose any one payment mode for application fee*</h4><table >
+      <tbody><tr><td colspan="3"><input id="certified_program_user_payment_mode_online_transfer" name="certified_program_user[payment_mode]" type="radio" value="Online Transfer">Online Transfer
+<input id="certified_program_user_payment_mode__demand_draft_" name="certified_program_user[payment_mode]" type="radio" value=" Demand Draft "> Demand Draft <input id="certified_program_user_payment_mode_cash" name="certified_program_user[payment_mode]" type="radio" value="Cash">Cash</td><td></td><td>Note: Application Fee Rs 500/- only</td></tr>
+</tbody></table>
+ <h4>Declaration</h4><h6>I certify that information provided in this application form is correct.</h6><table >
+      
+      <tbody><tr><td>Current City*</td><td colspan="2"><input id="certified_program_user_current_city" name="certified_program_user[current_city]" size="30" type="text"></td><td>Applicant Name*</td><td><input id="certified_program_user_applicant_name" name="certified_program_user[applicant_name]" size="30" type="text"></td></tr>
+
+</tbody></table>
+<table>
+
+<tbody><tr><td></td><td><input class="btn btn-large btn-primary" name="commit" type="submit" value="submit">
+</td></tr>
+<tr><td>  *Mandatory fields</td></tr>
+</tbody></table>
+      </form><script type="text/javascript">
+$('.datepicker').datepicker()</script></div>
