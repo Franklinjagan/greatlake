@@ -1,10 +1,10 @@
 Greatlakes::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  root :to => 'screens#home'
+  root :to => 'screens#index'
 
-
-match '/businessanalyticsprogram',:to=>'screens#index'
+match '/pgpba',:to=>'screens#index'
+match '/businessanalyticsprogram',:to=>'screens#home'
 match '/pgpba/application',:to=>'screens#form'
 match '/download_pdf_pgpba',:to=>'screens#download_pdf_pgpba'
   # Sample of regular route:
