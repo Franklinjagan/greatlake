@@ -1,5 +1,7 @@
 class ScreensController < ApplicationController
-	
+	def home
+	     @request_url= request.referer
+	end
 
 	def download_pdf_pgpba
 	    path = "#{Rails.root}/public/pdf/Opportunities in Analytics - Great Lakes.pdf"
