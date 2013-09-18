@@ -1,5 +1,5 @@
 class ScreensController < ApplicationController
-	def home
+	def index
 	     @request_url= request.referer
 	end
 
