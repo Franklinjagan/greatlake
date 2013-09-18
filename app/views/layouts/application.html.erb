@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greatlakes</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script src="http://use.edgefonts.net/source-sans-pro.js"></script>
+</head>
+<body>
+<div class="container" style="width: 100%;">
+<div class="row">
+
+<%= yield %>
+<%= render 'layouts/program_popup' %>
+</div>
+</div>
+</body>
+</html>
+

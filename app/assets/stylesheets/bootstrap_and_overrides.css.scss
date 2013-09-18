@@ -1,0 +1,357 @@
+@import "bootstrap";
+@import "bootstrap-responsive";
+
+
+@font-face {
+  font-family:"Source Sans Pro";
+  src: url("fonts/SourceSansPro-Regular.eot");
+  src:url("fonts/SourceSansPro-Regular.eot?") format("eot"),url("SourceSansPro-Regular.woff") format("woff"),url("SourceSansPro-Regular.ttf") format("truetype"),url("fonts/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+body{
+  color: #34495e;
+  font: 14px  source-sans-pro, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+p{text-align:justify;}
+
+.nav-tabs1,
+.nav-pills1 {
+  *zoom: 1;
+}
+.nav > li > a:hover{color:#333;}
+.coursesyllabus .underlinetext{
+   
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #333;
+  z-index: 0;
+  line-height: 22px;
+  margin-left: 0px;
+}
+.nav-tabs1:before,
+.nav-pills1:before,
+.nav-tabs1:after,
+.nav-pills1:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.carousel{margin-bottom:0px;}
+.nav-tabs1:after,
+.nav-pills1:after {
+  clear: both;
+}
+a {text-decoration:none;}
+
+.nav-tabs1 > li,
+.nav-pills1 > li {
+  float: left;
+  height: 45px;
+}
+.nav-tabs1,
+.nav-pills1 {
+  *zoom: 1;
+}
+
+.nav-tabs1:before,
+.nav-pills1:before,
+.nav-tabs1:after,
+.nav-pills1:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.nav-tabs1:after,
+.nav-pills1:after {
+  clear: both;
+}
+
+.nav-tabs1 > li,
+.nav-pills1 > li {
+  float: left;
+}
+
+.nav-tabs1 > li > a,
+.nav-pills1 > li > a {
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: 0px;
+  line-height: 14px;
+}
+ .coursesyllabus .underlinetext{
+    text-align: justify;
+    }
+.nav-tabs1 > li > a {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  line-height: 20px;
+font-size: 21px;
+color: white;
+
+}
+.navbar .nav > .active > a{border-bottom: 2px solid #333;}
+.nav-tabs1 > li:hover {
+ background-color: #fff;
+ color:#000;
+}
+
+.nav-tabs1 > .active > a,
+.nav-tabs1 > .active > a:hover {
+  color: #555555;
+  cursor: default;
+  background-color: #ffffff;
+  border-top: 1px solid #333;
+ 
+}
+
+.nav-tabs2,
+.nav-pills {
+  *zoom: 1;
+}
+
+.nav-tabs2:before,
+.nav-pills:before,
+.nav-tabs2:after,
+.nav-pills:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.nav-tabs2:after,
+.nav-pills:after {
+  clear: both;
+}
+
+.nav-tabs2 > li,
+.nav-pills > li {
+  float: left;
+}
+.nav-tabs2,
+.nav-pills {
+  *zoom: 1;
+}
+
+.nav-tabs2:before,
+.nav-pills:before,
+.nav-tabs2:after,
+.nav-pills:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.nav-tabs2:after,
+.nav-pills:after {
+  clear: both;
+}
+
+.nav-tabs2 > li,
+.nav-pills > li {
+  float: left;
+}
+
+.nav-tabs2 > li > a,
+.nav-pills > li > a {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  line-height: 14px;
+}
+.nav-tabs2 > li > a{font-size:16px;}
+.nav-tabs2 > li {
+margin-bottom: -1px;
+border-bottom: 1px solid #ddd;
+width: 90%;
+}
+
+.nav-tabs2 > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 20px;
+  color: #000;
+ border-top: 1px solid #ddd;
+}
+
+.nav-tabs2 > li > a:hover {
+  color: #4183c4;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight:normal;
+}
+
+.nav-tabs2 > .active > a,
+.nav-tabs2 > .active > a:hover {
+  color: #4183c4;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+ }
+
+ .carousel-nav a {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    text-indent: -9999px;
+    border: 0;
+    border-radius: 15px;
+    margin-right: 3px;
+    float: left;
+    color: white;
+}
+
+.carousel-nav{
+width: 124px;
+float: right;
+margin-top: -50px;
+position:relative;  }
+.carousel-nav a.active {
+    background:#333;
+    border:1px solid #fff;
+}
+.modal2-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+
+.modal2-backdrop.fade {
+  opacity: 0;
+}
+
+.modal2-backdrop,
+.modal2-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+.modal2 {
+position: fixed;
+top: 10%;
+left: 0%;
+z-index: 1050;
+/*min-width: 560px;
+max-width: 100%;*/
+width: 100%;
+height: 100%;
+/*margin-left: -280px;*/
+background-color: #ffffff;
+border: 1px solid #999;
+border: 1px solid rgba(0, 0, 0, 0.3);
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+outline: none;
+-webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+-webkit-background-clip: padding-box;
+-moz-background-clip: padding-box;
+background-clip: padding-box;
+}
+
+.modal2.fade {
+  top: 0%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal2.fade.in {
+  top: 0%;
+}
+
+.modal2-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.modal2-header .close {
+  margin-top: 2px;
+}
+
+.modal2-header h3 {
+  margin: 0;
+  line-height: 30px;
+}
+
+.modal2-body {
+  position: relative;
+/*  min-height:400px;*/
+  padding: 20px;
+  height:100%;
+/*  margin-top:10px;*/
+  margin-bottom: 35px;
+
+}
+
+.modal2-form {
+  margin-bottom: 0;
+   max-width: 200px;
+}
+
+.modal2-footer {
+  padding: 14px 15px 15px;
+  margin-bottom: 0;
+  text-align: right;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+  *zoom: 1;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff;
+     -moz-box-shadow: inset 0 1px 0 #ffffff;
+          box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.modal2-footer:before,
+.modal2-footer:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.modal2-footer:after {
+  clear: both;
+}
+
+.modal2-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.modal2-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+
+.modal2-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+.wrap_box{
+-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+    box-sizing: border-box;
+      -webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.25);
+        box-shadow: 0 1px 2px 1px rgba(0,0,0,0.25); 
+         background-color: #fff;         
+  -webkit-border-radius: 1px; 
+   border-radius: 1px; 
+     margin-left: -3.1914895%; 
+      width: 106.382979%; 
+       height: 100%;margin-bottom:20px;
+       }
