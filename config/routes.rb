@@ -5,7 +5,7 @@ Greatlakes::Application.routes.draw do
 
 match '/pgpba',:to=>'screens#index'
 match '/businessanalyticsprogram',:to=>'screens#home'
-match '/pgpba/application',:to=>'screens#form'
+match '/application',:to=>'screens#form'
 match '/download_pdf_pgpba',:to=>'screens#download_pdf_pgpba'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

@@ -1,3 +1,36 @@
 // Place all the styles related to the screens controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.header-section {
+width: 85%;
+margin:0px auto;
+}
+.logo {
+width: 173px;
+float: left;
+padding: 15px 0 0 0;
+}
+.headerRight {
+width: 76%;
+float: right;
+padding: 8px 0 0 0;
+}
+.ddsmoothmenu {
+width: 100%;
+float: left;
+padding: 7px 0;
+font-size: 1.15em;
+color: #7a7a7a;
+height: 26px;
+}
+.ddsmoothmenu ul {
+z-index: 100;
+text-transform: uppercase;
+}
+.ddsmoothmenu ul li {
+position: relative;
+display: inline;
+float: left;
+padding: 0 14px;
+background: url(/themes/bartik/images/linkbdr-img.png) right 3px no-repeat;
+}
