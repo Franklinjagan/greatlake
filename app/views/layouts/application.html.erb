@@ -6,31 +6,20 @@
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
      <%= favicon_link_tag 'favicon.ico', :size => "16x16"%>
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application"%>
+      <%= render 'layouts/shim' %>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-<script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
 <div class="container-fluid">
   <div class="row-fluid">
-    <div class="span12">
-    	
+  <div class="span12">
     <%= render 'layouts/header' %>
-	<%= yield %>
-	 <%= render 'layouts/program_popup' %>
+	  <%= yield %>
+	  <%= render 'layouts/program_popup' %>
+    <%= render 'layouts/download_popup' %>
 	</div>
   </div>
 </div>
