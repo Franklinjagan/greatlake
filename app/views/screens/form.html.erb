@@ -79,5 +79,27 @@
 <tr><td>  *Mandatory fields</td></tr>
 </tbody></table>
      <script type="text/javascript">
-$('.datepicker').datepicker()</script></div>
+$('.datepicker').datepicker()</script>
+
+ <script>
+   function submit_data(f, app_id){
+     var data_string = $(f).serialize();
+     $.ajax({
+              url: "http://beacon-learning.herokuapp.com/certified_program_users"+app_id+"/"+data_string,
+              dataType: "jsonp",
+              crossDomain: true,
+            });
+   }
+
+  function show_errors(jsonOb)
+    {
+      $("span.error").remove();
+      $.each(jsonOb, function(key,val){
+      $("#contact_us_form_"+key).after("<span class=error>"+val+"</span>")
+    });
+  }
+
+
+ </script>
+</div>
  </form>
