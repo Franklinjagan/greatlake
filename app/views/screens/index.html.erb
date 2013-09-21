@@ -1,9 +1,4 @@
-<script type="text/javascript">
 
-$('#gotohome').click(function() {
-  $('#myTab li a[href="#profile1"]').tab('show');
-});
-</script>
         <div class=" row-fluid " style="margin:-10px 0px;">
     <div style="background:#fab619;height: 85px;width:100%;margin-top:-5px;text-align:center;line-height:55px;font-size:32px;">
          <h1 style="font-size: 40px;line-height: 60px;font-weight: 500;">  Post Graduate Programme in Business Analytics</h1>
@@ -23,7 +18,7 @@ $('#gotohome').click(function() {
               </p>
             </div> -->
 
- <div class="span12" align="center" style="background-image:url(../assets/slider-1.png); background-repeat:no-repeat;background-size:100% 100%;color:white;width:100%;height: 300px;">
+ <div class="span12" align="center" style="background-image:url(../assets/slider-11.png); background-repeat:no-repeat;background-size:100% 100%;color:white;width:100%;height: 300px;">
       <div class="span12" style="width: 80%;text-align:justify;margin: 0px 10%;">
        <div class="span4" align="center" style="margin-top: 40px;margin-left: 160px;">
          <div class="bannervideo" >
@@ -36,7 +31,8 @@ $('#gotohome').click(function() {
                           <div class="bannerinfo">
                             <p style="font-size:18px;color:#000;">Designed with an innovative pedagogy and delivered by illustrious faculty, PGP-BA is tailored for working professionals who wish to build managerial careers in the growing Analytics industry. <br>
                               
-                             </p><br><a href="#profile1" class="open-tab" style="font-size:16px;text-decoration:underline;color:#000;">Explore More</a>
+                             </p><br>
+ <%= link_to "Explore More", root_path(:format => :js),:remote => true,'data-toggle' => 'tab', 'data-target' => '#profile1',:style=>"font-size:16px;text-decoration:underline;color:#000;" %>
                           </div></div>
                        </div>
                          </div>
@@ -219,14 +215,14 @@ Great Lakes faculty have authored several books and research articles on analyti
   </div>
   </div>
   <div class="tab-pane" id="profile1">
-   <div class="span10" style="width:96%;">
+   <div class="span10" style="width:100%;">
       <div class="tabbable tabs-left" > 
       <div  style="margin-top: 40px;float: left;width: 23%;margin-right: 0px; 10px;float: left;
   height: 760px;
   background: url('assets/greybandcopy.png');background-position-x: 185px;">
   <ul class="nav nav-tabs2" id="myTab1" style="">
-    <li class="active"><a href="#Details">Programme Details</a></li>
-    <li class="tab-pane"><a href="#Benefits">Programme Benefits</a></li>
+    <li class="active"><a href="#Benefits">Programme Benefits</a></li>
+    <li class="tab-pane"><a href="#Details">Programme Details</a></li>
     <li class="tab-pane"><a href="#Curriculum">Curriculum</a></li>
     <li class="tab-pane"><a href="#Faculty"> Faculty</a></li>
     <li class="tab-pane"><a href="#Calendar">Calendar</a></li>
@@ -235,7 +231,14 @@ Great Lakes faculty have authored several books and research articles on analyti
   </ul></div>
 
   <div class="tab-content" style="width: 76%;float: left;padding-top: 30px;">
-    <div class="tab-pane active" id="Details">
+       <div class="tab-pane active" id="Benefits" style="padding:0px;">
+
+  <div class="underlinetext" style="text-align:center;">
+      
+     <img src="assets/Program Benefits-Infographic.jpg">
+  </div>
+  </div>
+ <div class="tab-pane " id="Details">
   <div class="aboutcompany">
       <div class="underlinetext" style="text-align:center;">
        <div class="underlinetext">
@@ -253,13 +256,8 @@ Great Lakes faculty have authored several books and research articles on analyti
 
      </div>
   </div></div>
-    <div class="tab-pane" id="Benefits" style="padding:20px;">
 
-  <div class="underlinetext" style="text-align:center;">
-      
-     <img src="assets/Program Benefits-Infographic.jpg">
-  </div>
-  </div>
+
    <div class="tab-pane" id="Curriculum" style="padding:20px;">
   <div class="underlinetext">
       <h2>Curriculum</h2>
@@ -377,7 +375,7 @@ Senior executives and practitioners who have worked with leading organizations t
 
     </div>
     <div class="tab-pane" id="messages1">
-   <div class="span10" style="width:96%;">
+   <div class="span10" style="width:100%;">
       <div class="tabbable tabs-left" > 
       <div  style="margin-top: 40px;float: left;width: 23%;margin-right: 10px;height: 625px;
   background: url('assets/greybandcopy.png');background-position-x: 185px;">
@@ -440,12 +438,12 @@ Senior executives and practitioners who have worked with leading organizations t
        <table class="table table-bordered table-striped"><thead style="background: #8F8888;"><tr><th>Event</th>
     <th>Deadline</th></tr></thead>
     <tbody>
-      <tr><td>Last Date for Receiving Application</td><td>28 August, 2013</td></tr>
-    <tr><td>Online Test</td><td>02 September, 2013</td></tr>
-  <tr><td>Addmission Process</td><td>10 September, 2013</td></tr>
-  <tr><td>Final list of Selected Candidates</td><td>20 September, 2013</td></tr>
-  <tr><td>Commencement of Programme</td><td>18 October, 2013</td></tr>
+      <tr><td>Issue of Application begins</td><td>23rd September, 2013</td></tr>
+     <tr><td>First cycle admissions</td><td>23rd September, 2013 - 12th October, 2013</td></tr>
+  <tr><td>First cycle results</td><td>15th October, 2013</td></tr>
+  <tr><td>Batch Commencement</td><td>22nd November, 2013</td></tr>
   </tbody></table>
+  The admission office reserves the right to conduct a second cycle of admissions, if required.
   </div></div>
    <div class="tab-pane" id="sponsor" style="padding:20px;">
   <div class="underlinetext">
@@ -458,7 +456,7 @@ Senior executives and practitioners who have worked with leading organizations t
    <div class="tab-pane" id="faq" style="padding:20px;">
   <div class="underlinetext">
     <h2>FAQ's</h2>
-
+<%= render 'layouts/faq' %>
           <div id="faqs">
             <div id="question" align="left">
                 <i class="icon-question-sign icon"></i>
@@ -666,10 +664,7 @@ Senior executives and practitioners who have worked with leading organizations t
     e.preventDefault();
     $(this).tab('show');
   })
- $('.open-tab').click(function (event) {
-        var tab = $(this).attr('href');
-        $('#myTab li a').tabs('select', tab);
-    });
+
   </script>
   
 
