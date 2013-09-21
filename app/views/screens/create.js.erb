@@ -1,0 +1,11 @@
+
+<% if @errors.blank? %>
+  window.location = "<%= @application.redirect_url  %>"
+<% else %>
+  var errors = replaceAll('<%= escape_javascript(@errors.to_json)%>', "&quot;", "'")
+  var errors_json = eval('(' + errors + ')')
+  show_errors(errors_json);
+  function replaceAll(txt, replace, with_this) {
+    return txt.replace(new RegExp(replace, 'g'),with_this);
+  }
+<% end %>
