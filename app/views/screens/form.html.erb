@@ -1,4 +1,4 @@
-<form action="" onsubmit="submit_data(this, '1'); return false;">
+<form action="http://beacon-learning.herokuapp.com/certified_program_users/new" onsubmit="submit_data(this, '1'); return false;">
   <div style="border:#b7b0b0 1px solid; width:1000px; margin:0px auto;padding: 10px;">
 <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="NLuLNBdNfCSO3ApyL/8071d8pH0OzHBIEaWZ9j6YWu8="></div>
 <table class="table">
@@ -63,10 +63,10 @@
 <tr><td>c</td><td>Others (Specify)</td><td><input id="certified_program_user_others_a" name="certified_program_user[others_a]" size="30" style="width:600px;" type="text"></td></tr>
 <tr><td></td><td></td><td><input id="certified_program_user_others_b" name="certified_program_user[others_b]" size="30" style="width:600px;" type="text"></td></tr>
   </tbody></table>
-    <h4>Please choose any one payment mode for application fee*</h4><table class="table">
+   <!--  <h4>Please choose any one payment mode for application fee*</h4><table class="table">
       <tbody><tr><td colspan="3"><input id="certified_program_user_payment_mode_online_transfer" name="certified_program_user[payment_mode]" type="radio" value="Online Transfer">Online Transfer
 <input id="certified_program_user_payment_mode__demand_draft_" name="certified_program_user[payment_mode]" type="radio" value=" Demand Draft "> Demand Draft <input id="certified_program_user_payment_mode_cash" name="certified_program_user[payment_mode]" type="radio" value="Cash">Cash</td><td></td><td>Note: Application Fee Rs 500/- only</td></tr>
-</tbody></table>
+</tbody></table> -->
  <h4>Declaration</h4><h6>I certify that information provided in this application form is correct.</h6><table class="table">
       
       <tbody><tr><td>Current City*</td><td colspan="2"><input id="certified_program_user_current_city" name="certified_program_user[current_city]" size="30" type="text"></td><td>Applicant Name*</td><td><input id="certified_program_user_applicant_name" name="certified_program_user[applicant_name]" size="30" type="text"></td></tr>
@@ -82,23 +82,23 @@
 $('.datepicker').datepicker()</script>
 
  <script>
-   function submit_data(f, app_id){
-     var data_string = $(f).serialize();
-     $.ajax({
-              url: "http://beacon-learning.herokuapp.com/certified_program_users"+app_id+"/"+data_string,
-              dataType: "jsonp",
-              type:'POST',
-              crossDomain: true,
-            });
-   }
+  //  function submit_data(f, app_id){
+  //    var data_string = $(f).serialize();
+  //    $.ajax({
+  //        url: "http://beacon-learning.herokuapp.com/certified_program_users"+app_id+"/"+data_string,
+  //             dataType: "jsonp",
+  //             type:'POST',
+  //             crossDomain: true,
+  //           });
+  //  }
 
-  function show_errors(jsonOb)
-    {
-      $("span.error").remove();
-      $.each(jsonOb, function(key,val){
-      $("#contact_us_form_"+key).after("<span class=error>"+val+"</span>")
-    });
-  }
+  // function show_errors(jsonOb)
+  //   {
+  //     $("span.error").remove();
+  //     $.each(jsonOb, function(key,val){
+  //     $("#contact_us_form_"+key).after("<span class=error>"+val+"</span>")
+  //   });
+  // }
 
 
  </script>
