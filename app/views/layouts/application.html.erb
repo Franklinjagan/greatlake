@@ -17,7 +17,15 @@
 <div class="container-fluid">
   <div class="row-fluid">
   <div class="span12">
+
     <%= render 'layouts/header' %>
+   
+     <% flash.each do |key, value| %>
+ <div class="span6" style="width:50%;margin: 5px 310px;text-align: center;">
+    <div class="alert alert-<%= key %>"><%= value %></div>
+    </div>
+    <% end %>
+  
 	  <%= yield %>
 	  <%= render 'layouts/program_popup' %>
     <%= render 'layouts/download_popup' %>
