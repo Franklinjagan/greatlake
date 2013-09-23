@@ -1,8 +1,6 @@
 class CertifiedProgramUsersController < ApplicationController
 
-
-
-	def show_applicant_image   
+  def show_applicant_image   
     @certificateprogramusers = CertifiedProgramUser.find(params[:id])
     send_data @certificateprogramusers.applicant_photo, :type => @certificateprogramusers.applicant_photo_type, :disposition => 'inline'
     http_cache(@certificateprogramusers)

@@ -7,10 +7,15 @@
      <%= favicon_link_tag 'favicon.ico', :size => "16x16"%>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application"%>
-        
+       <script type="text/javascript"> 
+ (function() {
+  var a = document.createElement('script');a.type = 'text/javascript'; a.async = true; 
+  a.src=('https:'==document.location.protocol?'https://':'http://cdn.')+'chuknu.sokrati.com/480/tracker.js'; 
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(a, s);
+       })();
+</script> 
       <%= render 'layouts/shim' %>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-
   <%= csrf_meta_tags %>
 </head>
 <body>

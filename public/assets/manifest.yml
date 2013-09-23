@@ -13,6 +13,8 @@ Admissions Infographic.jpg: Admissions Infographic-541111d2b941b4bfb5be91a868d9e
 Admissions Infographic/index.jpg: Admissions Infographic-541111d2b941b4bfb5be91a868d9e82e.jpg
 Admissions-Infographic.jpg: Admissions-Infographic-5b13e3cd58f496ce7f06adea5f4cd6aa.jpg
 Admissions-Infographic/index.jpg: Admissions-Infographic-5b13e3cd58f496ce7f06adea5f4cd6aa.jpg
+Admissions-Infographic1.jpg: Admissions-Infographic1-b803230d7b15ffd70f564d818bf460ff.jpg
+Admissions-Infographic1/index.jpg: Admissions-Infographic1-b803230d7b15ffd70f564d818bf460ff.jpg
 Analytics Infographic.jpg: Analytics Infographic-d563ca59c5d621bb226172b3da471d85.jpg
 Analytics Infographic/index.jpg: Analytics Infographic-d563ca59c5d621bb226172b3da471d85.jpg
 Arvind.jpg: Arvind-9fde6979bf5cb51b5ef6c20cb5525207.jpg
@@ -97,8 +99,6 @@ checkbox.png: checkbox-0ad940edb7ea9be012faffb674eca35e.png
 checkbox/index.png: checkbox-0ad940edb7ea9be012faffb674eca35e.png
 close.png: close-058459174d23bc4fdd974df20b049e28.png
 close/index.png: close-058459174d23bc4fdd974df20b049e28.png
-collated-infographic-web.jpg: collated-infographic-web-b4c80701d6f9f50e43c5f2582375662c.jpg
-collated-infographic-web/index.jpg: collated-infographic-web-b4c80701d6f9f50e43c5f2582375662c.jpg
 collated-infographic.jpg: collated-infographic-0106974c24e12b42c02e505c62b2eb66.jpg
 collated-infographic/index.jpg: collated-infographic-0106974c24e12b42c02e505c62b2eb66.jpg
 coming_soon.png: coming_soon-6eb843baccb5718d95cb9a0908b18c0c.png
@@ -107,6 +107,8 @@ comingsoon.png: comingsoon-08521ae295415ca43d4f15543351907e.png
 comingsoon/index.png: comingsoon-08521ae295415ca43d4f15543351907e.png
 contact.png: contact-8fe02b7b29f3f237b9a03e7ff890ba6f.png
 contact/index.png: contact-8fe02b7b29f3f237b9a03e7ff890ba6f.png
+corner_ribbon.png: corner_ribbon-baa5790924cf620d2f27b9ca1598a44a.png
+corner_ribbon/index.png: corner_ribbon-baa5790924cf620d2f27b9ca1598a44a.png
 course_bg.png: course_bg-0d85b92ccf9eb817ab103e1ccce0dfa4.png
 course_bg/index.png: course_bg-0d85b92ccf9eb817ab103e1ccce0dfa4.png
 course_bg1.png: course_bg1-0bfa9045a64375969418b5a47342998b.png
@@ -139,14 +141,8 @@ facebook.png: facebook-68917c5fea39161cf66e402abe609041.png
 facebook/index.png: facebook-68917c5fea39161cf66e402abe609041.png
 faq.png: faq-a82b04bced98e194399f7444b37b0f5b.png
 faq/index.png: faq-a82b04bced98e194399f7444b37b0f5b.png
-favicon.ico: favicon-a28f180428b51e3fe16c8d72c0b0ed1d.ico
-favicon/index.ico: favicon-a28f180428b51e3fe16c8d72c0b0ed1d.ico
-favicon.png: favicon-c70752a8e06e053bffd800d37c378d63.png
-favicon/index.png: favicon-c70752a8e06e053bffd800d37c378d63.png
-favicon1.ico: favicon1-756dcfe98f4c246e289d53abbf56a156.ico
-favicon1/index.ico: favicon1-756dcfe98f4c246e289d53abbf56a156.ico
-favicon1.png: favicon1-645b59ccd97723f159b0cb78b20acb7f.png
-favicon1/index.png: favicon1-645b59ccd97723f159b0cb78b20acb7f.png
+favicon.ico: favicon-a23a7a43cdb23e12ae65cdf622d2783d.ico
+favicon/index.ico: favicon-a23a7a43cdb23e12ae65cdf622d2783d.ico
 favicon_normal.ico: favicon_normal-950c89368126bd32b3ae81a43f565022.ico
 favicon_normal/index.ico: favicon_normal-950c89368126bd32b3ae81a43f565022.ico
 featured.png: featured-f3c33358f3a7789f85fb80ed1c76cde6.png
@@ -205,6 +201,12 @@ img04.jpg: img04-8237831750ef1956697a51202034d5b4.jpg
 img04/index.jpg: img04-8237831750ef1956697a51202034d5b4.jpg
 img05.jpg: img05-06c54baaeb814145afc79882a023c1f7.jpg
 img05/index.jpg: img05-06c54baaeb814145afc79882a023c1f7.jpg
+info_banr.png: info_banr-e2a30308433c71f94d4f71d15cf31c0d.png
+info_banr/index.png: info_banr-e2a30308433c71f94d4f71d15cf31c0d.png
+info_banr1.png: info_banr1-215ae57619ac88000d8ead92429984cb.png
+info_banr1/index.png: info_banr1-215ae57619ac88000d8ead92429984cb.png
+infographic.jpg: infographic-75e372322887c262133c1a7c0d75cdd3.jpg
+infographic/index.jpg: infographic-75e372322887c262133c1a7c0d75cdd3.jpg
 jigsaw.jpg: jigsaw-36a65b116a078c3ba74dbca91154c8eb.jpg
 jigsaw/index.jpg: jigsaw-36a65b116a078c3ba74dbca91154c8eb.jpg
 jigsaw.png: jigsaw-1dfb0dd4e0e3f766e8fae2672b0a55e4.png
@@ -294,6 +296,8 @@ shantanu.jpg: shantanu-7dd300d331aa425a559b156354d70378.jpg
 shantanu/index.jpg: shantanu-7dd300d331aa425a559b156354d70378.jpg
 slider-1.png: slider-1-33ee4da4fd5e7c50fd240142f7d2a234.png
 slider-1/index.png: slider-1-33ee4da4fd5e7c50fd240142f7d2a234.png
+slider-11.png: slider-11-7c54ed437b701823e18fc6c860665f09.png
+slider-11/index.png: slider-11-7c54ed437b701823e18fc6c860665f09.png
 slider-3.png: slider-3-4a29961a6c75707829c5b2812dfd7479.png
 slider-3/index.png: slider-3-4a29961a6c75707829c5b2812dfd7479.png
 slider1.png: slider1-72f2c628ffa83658cd970ffa3eee0bfe.png
@@ -344,9 +348,9 @@ youtube.png: youtube-b842e45229c122a1e1a99f127a219bba.png
 youtube/index.png: youtube-b842e45229c122a1e1a99f127a219bba.png
 zbeaconslogo.png: zbeaconslogo-874667d48e25f0aa850bf9769ea6f2f1.png
 zbeaconslogo/index.png: zbeaconslogo-874667d48e25f0aa850bf9769ea6f2f1.png
-application.js: application-d332b150b4b37d1e130a9b4365276d56.js
-application/index.js: application-d332b150b4b37d1e130a9b4365276d56.js
-application.css: application-048349adbb41cc6930c17263295c6e42.css
-application/index.css: application-048349adbb41cc6930c17263295c6e42.css
+application.js: application-5b01ae6f6f3e3b3325d6eaf804f58254.js
+application/index.js: application-5b01ae6f6f3e3b3325d6eaf804f58254.js
+application.css: application-f97298ec575d178114a0ff136058a8d6.css
+application/index.css: application-f97298ec575d178114a0ff136058a8d6.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
