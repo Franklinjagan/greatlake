@@ -23,7 +23,7 @@ class CertifiedProgramUsersController < ApplicationController
 
           
 		if @certificateprogramuser.save		 
-		 flash[:success] = "certificate program user created!"		
+		 flash[:success] = "Application Submitted Succesfully"		
 			redirect_to root_url             
 		else		  
 		 flash[:error] = "Mandatory Fields should not be empty" 
