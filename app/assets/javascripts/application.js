@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
  WebFontConfig = {
     google: { families: [ 'Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic:latin' ] }
   };
@@ -80,4 +81,3 @@
          });
 
 
-$.noConflict();
