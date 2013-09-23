@@ -8,6 +8,7 @@ class CertifiedProgramUsersController < ApplicationController
     http_cache(@certificateprogramusers)
   end
 	def index
+		
      @request_url= request.referer
 
   end
