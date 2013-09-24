@@ -7,6 +7,7 @@ match '/pgpba',:to=>'screens#index'
 match '/businessanalyticsprogram',:to=>'screens#home'
 match '/application',:to=>'certified_program_users#new'
 match '/download_pdf_pgpba',:to=>'screens#download_pdf_pgpba'
+match '/download_brchr_pgpba',:to=>'screens#download_brchr_pgpba'
 resources :certified_program_users
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

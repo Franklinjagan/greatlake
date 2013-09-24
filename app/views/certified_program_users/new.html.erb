@@ -53,10 +53,7 @@
 <tr><td>c</td><td>Others (Specify)</td><td><%= f.text_field :others_a , :style=>"width:600px;"%></td></tr>
 <tr><td></td><td></td><td><%= f.text_field :others_b , :style=>"width:600px;"%></td></tr>
   </table>
-    <table class="table"><h4>Please choose any one payment mode for application fee*</h4>
-      <tr><td colspan="3"><%= f.radio_button(:payment_mode, "Online Transfer") %>Online Transfer
-<%= f.radio_button(:payment_mode, " Demand Draft ") %> Demand Draft <%= f.radio_button(:payment_mode, "Cash") %>Cash</td><td></td><td>Note: Application Fee Rs 500/- only</td></tr>
-</table>
+   
  <table class="table"><h4>Declaration</h4>
       <h6>I certify that information provided in this application form is correct.</h6>
       <tr><td>Current City*</td><td colspan="2"><%= f.text_field :current_city%></td><td>Applicant Name*</td><td><%= f.text_field :applicant_name%></td></tr>
