@@ -14,6 +14,8 @@ class CertifiedProgramUsersController < ApplicationController
     path = "#{Rails.root}/public/pdf/Opportunities_in_Analytics-Great_Lakes.pdf"
     send_data File.read(path),:filename => "Opportunities in Analytics - Great Lakes.pdf",:type => "application/pdf" ,disposition: "attachment"
   end
+
+
 	def new
 		@certificateprogramuser = CertifiedProgramUser.new
 	end
