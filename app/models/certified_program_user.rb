@@ -15,10 +15,7 @@ class CertifiedProgramUser < ActiveRecord::Base
      validates :date_of_birth, presence: true
      validates :marital_status, presence: true
      validates :father_name, presence: true
-     validates :father_occupation, presence: true
      validates :mother_name, presence: true
-     validates :mother_occupation, presence: true
-     validates :Nationality, presence: true
      validates :mailing_address, presence: true
      validates :mobile, presence: true
      validates :email, presence: true
@@ -44,8 +41,7 @@ class CertifiedProgramUser < ActiveRecord::Base
      validates :applicant_name, presence: true
 
 
-
-      def upload=(incoming_file)
+     def upload=(incoming_file)
     self.applicant_photo_name = incoming_file.original_filename
     self.applicant_photo_type = incoming_file.content_type
     self.applicant_photo= incoming_file.read

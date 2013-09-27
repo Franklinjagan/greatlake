@@ -490,7 +490,7 @@ Senior executives and practitioners who have worked with leading organizations t
   </script>
   
 
-<%if @request_url == "http://pgpba.greatlakes.edu.in/businessanalyticsprogram"   %>
+<%if @request_url == "http://localhost:4000/businessanalyticsprogram"   %>
 <script type="text/javascript">
    $(document).ready(function(){
    console.log("downloading pdf");
@@ -500,4 +500,4 @@ window.location.assign("/download_pdf_pgpba",'_blank')
 
 <% end  %>
       </div>
-    
+    <%= render 'layouts/download_popup' %>
