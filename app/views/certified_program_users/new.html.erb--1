@@ -1,3 +1,0 @@
-<div style="border:#b7b0b0 1px solid; width:1000px; margin:0px auto;">
-	<%= simple_form_for @certificateprogramusers do |f| %>
-	<% end %>
