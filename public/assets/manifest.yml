@@ -384,9 +384,9 @@ youtube.png: youtube-b842e45229c122a1e1a99f127a219bba.png
 youtube/index.png: youtube-b842e45229c122a1e1a99f127a219bba.png
 zbeaconslogo.png: zbeaconslogo-874667d48e25f0aa850bf9769ea6f2f1.png
 zbeaconslogo/index.png: zbeaconslogo-874667d48e25f0aa850bf9769ea6f2f1.png
-application.js: application-c5e315f1986aa3843e2e1115241ba54b.js
-application/index.js: application-c5e315f1986aa3843e2e1115241ba54b.js
-application.css: application-7a384302c0d729216cb7f0861c73d1d8.css
-application/index.css: application-7a384302c0d729216cb7f0861c73d1d8.css
+application.js: application-3f676dc17e49f6a2a1460205e41a8117.js
+application/index.js: application-3f676dc17e49f6a2a1460205e41a8117.js
+application.css: application-b1b3f94782d3babc4f1a55a4bc612c1b.css
+application/index.css: application-b1b3f94782d3babc4f1a55a4bc612c1b.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
