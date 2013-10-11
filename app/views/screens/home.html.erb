@@ -1,3 +1,87 @@
+<script type="text/javascript">
+$(document).ready(function()
+{
+var URLParser = function (url) {
+    this.url = url || window.location.href;
+    this.urlObject = this.parse(); 
+};
+
+URLParser.prototype = {
+    constructor : URLParser,
+    
+    parse : function (url) {
+        var tempArr,
+            item,
+            i,
+            returnObj = {};
+        this.url = url || this.url;
+        tempArr = this.url.split("?");
+        returnObj.baseURL = tempArr[0];
+        returnObj.params = {};
+        if (tempArr.length > 1) {
+            returnObj.queryString = tempArr[1];
+            tempArr = tempArr[1].split("&");
+            for (i = 0; i < tempArr.length; i++) {
+                item = tempArr[i].split("=");
+                returnObj.params[item[0]] = item[1];    
+            }
+        } else {
+            returnObj.queryString = "";
+        }
+        
+        return returnObj;
+    },
+    
+    toString : function () {
+        var strURL = this.urlObject.baseURL + "?",
+            paramObj = this.urlObject.params,
+            prop;
+        for (prop in paramObj) {
+            if (paramObj.hasOwnProperty(prop)) {
+                strURL += prop + "=" + paramObj[prop] + "&";
+            }
+         }
+        return strURL.substr(0, strURL.length - 1);
+    },
+    
+    removeParams : function (removeArray) {
+        var paramObj = this.urlObject.params,
+            key,
+            i;
+        if (removeArray instanceof Array) {
+            for (i = 0; i < removeArray.length; i++) {
+                key = removeArray[i];
+                if (paramObj.hasOwnProperty(key)) {
+                    delete paramObj[key];
+                }
+            }
+        }
+    },
+    
+    addParams : function (paramObj) {
+        var params = this.urlObject.params,
+            key;
+        if (typeof paramObj === "object") {
+            for (key in paramObj) {
+                if (paramObj.hasOwnProperty(key)) {
+                    params[key] = paramObj[key];
+                }
+            }
+        }
+    }
+};
+
+var up = new URLParser();
+var urlObj = up.parse(window.location.href);
+var soksid=urlObj.params['soksid'];
+var utm_source=urlObj.params['utm_source'];
+var Soksid = document.getElementById("soksid");
+Soksid.value = urlObj.params['soksid'];
+var Utmsource = document.getElementById("utmsource");
+utmsource.value = urlObj.params['utm_source'];
+});
+</script>
+
 
 <style type="text/css"> 
 .navbar{display:none;}
@@ -30,23 +114,24 @@ margin-top: -.5%;") %>
   <div style="margin-top:20px;margin-left: 50px;background:url('/assets/form_bg.png');width:450px;height:332px;">
     <div id='crmWebToEntityForm' align=center>
     <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>  
-  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads788461000000067005 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' 
-  accept-charset='UTF-8'><table border=0 cellspacing=0 cellpadding=5 
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads788461000000067005' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' 
+  accept-charset='UTF-8' ><table border=0 cellspacing=0 cellpadding=5 
   width=250 style='float:right;margin:65px 0px;'>  <input type='text' 
   style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/> 
   <input type='hidden' name='zc_gad' 
   id='zc_gad' value=''/>  <input type='text' style='display:none;' 
-  name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  <input 
-  type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
-  <input type='text' style='display:none;' name='returnURL' 
-  value='http://pgpba.greatlakes.edu.in/' /> 
+  name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  
+  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
+  <input type='text' style='display:none;' name='returnURL' value='http://pgpba.greatlakes.edu.in/' /> 
   <tr><td colspan='2' align='left' 
 style='font-size:22px;font-style:italic;'><strong>Free instant access</strong></td></tr>
   <tr><td nowrap style='font-family:sans-serif;font-size:12px;display:none;font-weight:bold' align='right' width='1%' >Last Name &nbsp;&nbsp;:</td><td 
   width='75%'><input type='text' maxlength='80' name='Last Name' placeholder="Name*" /> 
   </td></tr><tr><td width='75%'><input 
   type='text' maxlength='100' name='Email' placeholder="Email*"/> </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr><tr><td  
+  type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr>
+<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'><input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
+  <tr><td  
   align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
   <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
   checkMandatery(){for(i=0;i<mndFileds.length;i++){ var 
