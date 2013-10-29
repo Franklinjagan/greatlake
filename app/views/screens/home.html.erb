@@ -116,21 +116,22 @@ margin-top: -.5%;") %>
     <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>  
   <form action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads788461000000067005' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' 
   accept-charset='UTF-8' ><table border=0 cellspacing=0 cellpadding=5 
-  width=250 style='float:right;margin:65px 0px;'>  <input type='text' 
+  width=250 style='float:right;margin: 100px 0px 0px 0px;'>  <input type='text' 
   style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/> 
   <input type='hidden' name='zc_gad' 
   id='zc_gad' value=''/>  <input type='text' style='display:none;' 
   name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  
   <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
-  <input type='text' style='display:none;' name='returnURL' value='http://pgpba.greatlakes.edu.in/' /> 
+  <input type='text' style='display:none;' name='returnURL' value='http://localhost:3000/' /> 
   <tr><td colspan='2' align='left' 
-style='font-size:22px;font-style:italic;'><strong>Free instant access</strong></td></tr>
+style='font-size:22px;font-style:italic;display:none;'><strong>Free instant access</strong></td></tr>
   <tr><td nowrap style='font-family:sans-serif;font-size:12px;display:none;font-weight:bold' align='right' width='1%' >Last Name &nbsp;&nbsp;:</td><td 
   width='75%'><input type='text' maxlength='80' name='Last Name' placeholder="Name*" /> 
   </td></tr><tr><td width='75%'><input 
   type='text' maxlength='100' name='Email' placeholder="Email*"/> </td></tr><tr><td width='75%'><input 
   type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr>
 <tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'><input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
+<tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.url %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
   <tr><td  
   align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
   <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
@@ -140,7 +141,7 @@ style='font-size:22px;font-style:italic;'><strong>Free instant access</strong></
   '')).length==0){alert(fldLangVal[i] +' cannot be empty'); 
   fieldObj.focus(); return false;}else 
   if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] 
-  +' cannot be none'); fieldObj.focus(); return false;}}}}}</script>  
+  +' cannot be none'); fieldObj.focus(); return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>  
   </form></div>
 </div>
 </td></tr></table>
