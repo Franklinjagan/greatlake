@@ -80,9 +80,16 @@ Soksid.value = urlObj.params['soksid'];
 var Utmsource = document.getElementById("utmsource");
 utmsource.value = urlObj.params['utm_source'];
 });
+
 </script>
-
-
+<script type="text/javascript">
+$(document).ready(function() {
+ $('#TextBox1').bind('copy paste cut',function(e) { 
+ e.preventDefault(); //disable cut,copy,paste
+ alert('cut,copy & paste options are disabled !!');
+ });
+});
+</script>
 <style type="text/css"> 
 .navbar{display:none;}
 </style>
