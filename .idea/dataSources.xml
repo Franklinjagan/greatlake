@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2568845386">
+  <component name="DataSourceManagerImpl" format="xml" hash="2258311141">
     <data-source source="LOCAL" name="Rails greatlakes: staging" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="4f071c9c-70ef-4d9e-9a2f-1034deaf9e7d">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://192.168.1.51/beacon_production</jdbc-url>
@@ -15,19 +15,22 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails greatlakes: development" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="975101ad-029d-46f1-a7b4-c2e7137242bd">
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+    <data-source source="LOCAL" name="Rails greatlakes: production" product="PostgreSQL" version="9.2.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="ec8614a0-b34c-44f0-b7f0-6fc902d444f8">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/beacon_production</jdbc-url>
+      <user-name>beacon</user-name>
+      <user-password>dfc8dfcfdfcbdfc9dfc5dfc4</user-password>
       <libraries>
         <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/xerial-sqlite-license.txt</url>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-driver-license.txt</url>
         </library>
         <library>
-          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar</url>
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails greatlakes: production" product="PostgreSQL" version="9.2.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="ec8614a0-b34c-44f0-b7f0-6fc902d444f8">
+    <data-source source="LOCAL" name="Rails greatlakes: development" product="PostgreSQL" version="9.2.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.2 JDBC4 (build 1002)" uuid="583f463d-1a21-4b09-a000-7cfb289d1e03">
       <identifier-quote-string>&quot;</identifier-quote-string>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1/beacon_production</jdbc-url>
