@@ -75,21 +75,17 @@ var up = new URLParser();
 var urlObj = up.parse(window.location.href);
 var soksid=urlObj.params['soksid'];
 var utm_source=urlObj.params['utm_source'];
+var utm_campaign=urlObj.params['utm_campaign'];
 var Soksid = document.getElementById("soksid");
 Soksid.value = urlObj.params['soksid'];
 var Utmsource = document.getElementById("utmsource");
 utmsource.value = urlObj.params['utm_source'];
+var Utmcampign = document.getElementById("utmcampaign");
+utmcampaign.value = urlObj.params['utm_campaign'];
 });
 
 </script>
-<script type="text/javascript">
-$(document).ready(function() {
- $('#TextBox1').bind('copy paste cut',function(e) { 
- e.preventDefault(); //disable cut,copy,paste
- alert('cut,copy & paste options are disabled !!');
- });
-});
-</script>
+
 <style type="text/css"> 
 .navbar{display:none;}
 </style>
@@ -131,7 +127,7 @@ margin-top: -.5%;") %>
   id='zc_gad' value=''/>  <input type='text' style='display:none;' 
   name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  
   <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
-  <input type='text' style='display:none;' name='returnURL' value='http://localhost:3000/' /> 
+  <input type='text' style='display:none;' name='returnURL' value='http://pgpba.greatlakes.edu.in/' /> 
   <tr><td colspan='2' align='left' 
 style='font-size:22px;font-style:italic;display:none;'><strong>Free instant access</strong></td></tr>
   <tr><td nowrap style='font-family:sans-serif;font-size:12px;display:none;font-weight:bold' align='right' width='1%' >Last Name &nbsp;&nbsp;:</td><td 
@@ -139,7 +135,10 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
   </td></tr><tr><td width='75%'><input 
   type='text' maxlength='100' name='Email' placeholder="Email*"/> </td></tr><tr><td width='75%'><input 
   type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'><input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
+<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'>
+<input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
+<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM_Campaign &nbsp;&nbsp;:</td><td width='75%'>
+  <input type='hidden' maxlength='55' name='LEADCF5' id="utmcampaign" /> </td></tr> 
 <tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.fullpath() %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
   <tr><td  
   align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
