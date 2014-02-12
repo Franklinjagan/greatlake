@@ -24,12 +24,10 @@
 #   reconnect: true
 
 development:
-  adapter: postgresql
-  database: beacon_production
-  username: beacon
-  password: beacon
-  host: localhost
-  reconnect: true
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
 
 test: &test
   adapter: sqlite3
@@ -38,17 +36,13 @@ test: &test
   timeout: 5000
 
 production:
-  adapter: postgresql
-  database: beacon_production
-  username: beacon
-  password: beacon
-  host: localhost
-  reconnect: true
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
 
 staging:
-  adapter: postgresql
-  database: beacon_production
-  username: beacon
-  password: beacon
-  host: 192.168.1.51
-  reconnect: true
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
