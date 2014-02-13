@@ -149,7 +149,7 @@
    <div class="tab-pane" id="class_profile">
   <div class="aboutcompany">
       <div class="underlinetext" style="text-align:center;">
-        <%= image_tag('class_profile.png'), :style => "width:695px;" %>
+        <%= image_tag('class_profile.png', :style => "width:695px;") %>
      
   </div>
   </div></div>
@@ -246,12 +246,14 @@ Great Lakes faculty have authored several books and research articles on analyti
   background: url('/assets/greybandcopy.png');background-position-x: 185px;">
   <ul class="nav nav-tabs2" id="myTab1" style="">
     <li class="active"><a href="#Benefits">Programme Benefits</a></li>
-    <li class="tab-pane"><a href="#Details">Programme Details</a></li>
+<!--     <li class="tab-pane"><a href="#Details">Programme Details</a></li>
+ -->    <li class="tab-pane"><a href="#message">Message from the Dean</a></li>
+     <li class="tab-pane"><a href="#Pedagogy">Pedagogy</a></li>
+    <li class="tab-pane"><a href="#Calendar">Calendar</a></li>
     <li class="tab-pane"><a href="#Curriculum">Curriculum</a></li>
     <li class="tab-pane"><a href="#Faculty"> Faculty</a></li>
-    <li class="tab-pane"><a href="#Calendar">Calendar</a></li>
-    <li class="tab-pane"><a href="#Pedagogy">Pedagogy</a></li>
-    <li><a href="#partners">Corporate Partners</a></li>
+    <li><a href="#partners">Industry Interaction</a></li>
+    <li><a href="#Student">Student Testimonials</a></li>
   </ul></div>
 
   <div class="tab-content" style="width: 76%;float: left;padding-top: 30px;">
@@ -279,6 +281,43 @@ Great Lakes faculty have authored several books and research articles on analyti
 
      </div>
   </div></div>
+
+   <div class="tab-pane " id="message">
+  <div class="aboutcompany">
+      <div class="underlinetext" style="text-align:center;">
+       <div class="underlinetext">
+      <h2>Message from the Dean</h2>
+     
+        <table><tr><td><%= image_tag('dean.png', :style => "width:300px;height:150px;position:relative;") %></td>
+          <td><h3>Padma Shri Dr Bala V Balachandran</h3>
+        J L Kellogg Distinguished Professor (Emeritus in Service) of Accounting and Information Management, Northwestern University, Illinois, USA<br>
+        Founder & Dean, Great Lakes Institute of Management</td></tr></table>   
+      
+      <p style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">
+        “It is becoming imperative for businesses to draw insights and tangible actions from data. Business Analytics and Business Intelligence are indispensable for today’s managers and business leaders. “
+      </p>
+      <p style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">Great Lakes Institute of Management is delighted to offer a one year Post Graduate Program in Business Analytics and Business Intelligence for working executives (PGP-BA/BI). This program blends Academic Elegance with Business Relevance and paves the way for decision making in the midst of “big data” that bewilders business managers by its sheer size and complexity. </br></br>
+        The Post Graduate Program in Business Analytics and Business Intelligence (PGP-BA/BI) embraces a variety of techniques that can be used by companies to make effective strategic decisions apart from significantly improving   performance in key dimensions. The art of modeling a business problem, then finding the solution using analytics, and finally successfully implementing the solution are the hallmarks of this program.  <br></br>
+        The candidates pursuing this program can expect to gain an overview of business foundation and a comprehensive knowledge of analytic techniques, with an applied industry orientation designed for professionals interested in a career in analytics. <br></br>
+      Exhaustive coverage, Hands-on application, Multi-domain exposure and Deep Industry Immersion are the features that make the Great Lakes’ PGP-BA/BI your gateway to a successful analytics career.</p>
+  </div>
+     </div>
+  </div></div>
+
+   <div class="tab-pane " id="Student">
+  <div class="aboutcompany">
+      <div class="underlinetext" style="text-align:center;">
+       <div class="underlinetext">
+      <h2> Student Testimonials</h2>
+     
+        <table><tr><td><%= image_tag('student.png') %></td>
+          <td style=" font-style:italic;">"My journey in great lakes so far has been incredibly informative. Each faculty member is not only a recognized expert in their respective domain but also have a wealth of life experience which opens our eyes to all the real world scenarios. All in all Great lakes is an experience that everyone should experience."
+        </td></tr></table>   
+      
+      </div>
+     </div>
+  </div></div>
+
 
 
    <div class="tab-pane" id="Curriculum" style="padding:20px;">
@@ -350,24 +389,23 @@ Senior executives and practitioners who have worked with leading organizations t
        <h4>Calendar</h4>
 
   <table class="table table-striped table-bordered">
-  <thead><th>Month</th><th> Location</th><th>  Description</th></thead>
-  <tr><td>Nov-13 </td><td> Great Lakes, Gurgaon Campus </td><td>Registration & Inaugration</td></tr>
-  <tr><td>Nov-13  </td><td>Great Lakes, Gurgaon Campus </td><td>Classroom Sessions for 5 days</td></tr>
-  <tr><td>Dec-13 </td><td> Online Session </td><td> Online Lectures and Assignments </td></tr>
-  <tr><td>Jan-14</td><td>  Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Feb-14 </td><td> Online Session  </td><td>Online Lectures and Assignments </td></tr>
-  <tr><td>Mar-14 </td><td> Great Lakes, Gurgaon Campus </td><td>Classroom Sessions for 5 days</td></tr>
-  <tr><td>Apr-14 </td><td> Online Session</td><td>  Online Lectures and Assignments </td></tr>
-  <tr><td>May-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Jun-14  </td><td>Online Session</td><td>  Online Lectures and Assignments </td></tr>
-  <tr><td>Jul-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Aug-14 </td><td> Online Session  </td><td>Online Lectures and Assignments </td></tr>
-  <tr><td>Sep-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Sep-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Graduation </td></tr>
-  <tr><td>Classroom Hours</td><td colspan="2">  240 </td></tr>
+  <thead><th colspan="6" style="text-align:center;">PGP-BABI: Proposed schedule </th></thead>
+  <tr><td>April 2014</td><td> 18-22 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>May 2014</td><td>02-06</td><td>CHENNAI</td></tr>
+ <tr><td>June 2014</td><td> 13-17 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>July 20144</td><td>04-08</td><td>CHENNAI</td></tr>
+ <tr><td>Aug 2014</td><td> 22-26 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>Sep 2014</td><td>5-9</td><td>CHENNAI</td></tr>
+ <tr><td>Oct 2014</td><td> 17-21</td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>Nov 2014</td><td>7-11</td><td>CHENNAI</td></tr>
+ <tr><td>Dec 2014</td><td> 12-16 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>Jan 2015</td><td>09-13</td><td>CHENNAI</td></tr>
+ <tr><td>Feb 2015</td><td> 13-17 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>March 2015</td><td>13-17</td><td>CHENNAI</td></tr>
+  <!-- <tr><td>Classroom Hours</td><td colspan="2">  240 </td></tr>
   <tr><td>Online Hours </td><td colspan="2">  250*  </td></tr>
   <tr><td colspan="3">* Including online lecures assignments,quizzes,lab sessions,etc.   </td></tr> 
-  </table>
+   --></table>
 
       
   </div> </div>
@@ -375,28 +413,27 @@ Senior executives and practitioners who have worked with leading organizations t
   <div class="underlinetext">
        <h2>Pedagogy</h2>
     <h4>  Classroom learning</h4>
-  The classroom sessions would adopt a case study approach to develop conceptual learning of management and analytics. In similar vein as the full time Programmes, the candidates would be required to cover their pre-readings and other associated learning material to be well prepared for these sessions. <br>
+  The program consists of 230 hours of classroom sessions delivered by Great Lakes faculty and industry professionals from the field of analytics. This ensures that the program imbibes Great Lakes’ academic elegance and Industry’s Business relevance, ther providing the candidates a remarkable learning experience.  <br>
    
   <h4>Online Learning Management System (LMS)</h4>
-  The online LMS would be used to host content and live webinars that will enable the candidates to continue their learning while not on campus. In addition to providing an enriching learning environment, the LMS would also encourage collaborative learning between the candidates.
+All candidates have an access to the online LMS that hosts content (classroom recording, online lectures, assignments, reading material) and live webinars to enable the candidates continue their learning during off campus. The LMS provides an innovative learning environment that encourages collaborative approach between the candidates thus paving the way for maximizing learning effectiveness and clarity.  
    <br><br>
-  <h4>Virtual Lab</h4>
-  The virtual lab is a simulation environment that would be used by candidates for practicing exercises and assignments on tools such as SAS. The exposure on virtual lab would help candidates acquire hands on experience of analytical skills and techniques that are valued in the industry.
+  <h4>Experiential Learning through Virtual Lab</h4>
+This program is designed to transform candidates to business ready analytics professionals through hands on experiential learning on relevant tools.  The virtual lab provides an experiential learning format and is used by  candidates for practicing exercises and assignments on software packages such as SAS, R, etc.    <br><br>
+  <h4>Industry Perspective Lectures</h4>
+This is a critical component of the program that complements and substantiates the learning with an applied orientation. The participants get the opportunity to listen to eminent speakers from leading analytics companies and assimilate the best practices discussed by them in their lectures  .   <br><br>
+  <h4>Capstone Project</h4>
+All candidates would be pursuing an industry project in the field of Business Analytics. The project is mentored and jointly evaluated by faculty from Great Lakes and Industry leaders. The project will be presented to the faculty board as part of the requirement for successful completion of the program. 
    <br><br>
-  <h4>Industry Lectures</h4>
-  Industry Lectures are a key aspect of the Programme as they complement the learning in class by actual case studies from the industry discussed by senior executives from leading analytics companies. 
-   <br><br>
-  <h4>Industry Project</h4>
-  The Industry project would be a live project done in conjunction with a company, which will be performed under the guidance of a faculty from Great Lakes. This will be an individual project and will be presented to the faculty board for successful completion of the Programme.
-
-
+  <h4> Program Format</h4>
+This program has about 380 hours of learning comprising 230 hours of classroom learning and 100 hours of online/ off classroom. The participants would visit the campus on one weekend every month.   
   </div> </div>
 
 
    <div class="tab-pane" id="partners" style="padding:20px;">
   <div class="underlinetext">
-       <h2>Corporate Partners</h2>
-       <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">The Post Graduate Programme in Business Analytics offered by Great Lakes is conceived, and delivered in collaboration with the following Corporate Partners:</p><br>
+       <h2> Industry Interaction</h2>
+       <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">A distinguishing feature of the PGP-BABI pedagogy is the invaluable insights and mentorship that participants get from leading practitioners and senior industry executives. Organizations from which experts shall be contributing to our lectures, projects and case studies include:</p><br>
             <table class="table">
 
    <tr><td><%= image_tag("bridge_logo.png", :width=>"175", :height=>"70")%></td><td>
