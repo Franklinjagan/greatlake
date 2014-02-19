@@ -4,25 +4,16 @@
          <h1 style="font-size: 40px;line-height: 60px;font-weight: 500;">  Post Graduate Programme in Business Analytics </h1>
           </div>
 </div>
-      <div class="carousel slide" id="carousel-922297">
+     <!--  <div class="carousel slide" id="carousel-922297">
    
         <div class="carousel-inner">
           <div class="item active">
-          <!--   <img alt="" src="/assets/slider-1.png" />
-            <div class="carousel-caption">
-              <h4>
-                First Thumbnail label
-              </h4>
-              <p>
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              </p>
-            </div> -->
-
+         
  <div class="span12" align="center" style="background-image:url(/assets/slider-11.png); background-repeat:no-repeat;background-size:100% 100%;color:white;width:100%;height: 300px;">
       <div class="span12" style="width: 80%;text-align:justify;margin: 0px 10%;">
        <div class="span4" align="center" style="margin-top: 40px;margin-left: 160px;">
          <div class="bannervideo" >
-          <%= image_tag('GREAT LAKES LOGO.jpg',:height=>"100") %>
+          <%#= image_tag('GREAT LAKES LOGO.jpg',:height=>"100") %>
                                         </div></div>
                           <div class="span5" style="padding: 20px 0px 0px 0px;float: right;">
                            <div class="bannertext">
@@ -32,7 +23,7 @@
                             <p style="font-size:18px;color:#000;">Designed with an innovative pedagogy and delivered by illustrious faculty, PGP-BA is tailored for working professionals who wish to build managerial careers in the growing Analytics industry. <br>
                               
                              </p><br>
- <%= link_to "Explore More", root_path(:format => :js),:remote => true,'data-toggle' => 'tab', 'data-target' => '#profile1',:style=>"font-size:16px;text-decoration:underline;color:#000;" %>
+ <%#= link_to "Explore More", root_path(:format => :js),:remote => true,'data-toggle' => 'tab', 'data-target' => '#profile1',:style=>"font-size:16px;text-decoration:underline;color:#000;" %>
                           </div></div>
                        </div>
                          </div>
@@ -40,15 +31,7 @@
 
           </div>
           <div class="item">
-           <!--  <img alt="" src="/assets/slider2.png" />
-            <div class="carousel-caption">
-              <h4>
-                Second Thumbnail label
-              </h4>
-              <p>
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              </p>
-            </div> -->
+          
   <div class="span12" align="center"  style="background-image:url(/assets/slider2.png);background-repeat:no-repeat;background-size:100% 100%;color:black;width:100%;height: 300px;">
                           <div class="span12" style="width: 80%;text-align:justify;margin: 0px 10%;">
    <div class="span4" align="justify">
@@ -69,21 +52,13 @@
                         <div class="clearfix"></div>
           </div>
           <div class="item">
-           <!--  <img alt="" src="/assets/slider3.png" />
-            <div class="carousel-caption">
-              <h4>
-                Third Thumbnail label
-              </h4>
-              <p>
-                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-              </p>
-            </div> -->
+          
 
            <div class="span12" align="center"  style="background-image:url(/assets/slider-3.png);background-repeat:no-repeat;background-size:100% 100%;color:black;width:100%;height: 300px;">
                         <div class="span12" style="width: 80%;text-align:justify;margin: 0px 10%;">
                           <div class="span4" align="center" style="margin-top: 40px;margin-left: 160px;">
       <div class="bannervideo" >
-        <%= image_tag('partners_slider.png') %>
+        <%#= image_tag('partners_slider.png') %>
                               </div>
                         </div>
                         <div class="span5" align="center" style="padding: 40px 0px 0px 0px;float: right;" >
@@ -92,7 +67,7 @@
                           </div>
                           <div class="bannerinfo">
                    <p style="font-size:18px;color:white;text-align:justify;">The curricullum for PGP-BA is designed and delivered in association with leaing analytics organizations to ensure hands-on exposure and industry relavent skills.
-                             </p><!-- <a href="" style="text-decoration:underline;color:white;">learnmore</a> -->
+                             </p><a href="" style="text-decoration:underline;color:white;">learnmore</a> 
                           </div>
 
                          </div>
@@ -110,10 +85,29 @@
           <li data-slide-to="2" data-target="#carousel-922297">
           </li>
         </ol>
-      </div>
+      </div> -->
+<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  
+  <div class="carousel-inner">
+    <div class="active item"><%= image_tag('banner01.jpg') %><!-- <a href="" class="offset10" style="text-decoration:underline;color:white;">learnmore</a> --></div>
+    <div class="item"><%= image_tag('banner02.jpg') %></div>
+    <div class="item"><%= image_tag('banner03.jpg') %></div>
+  </div>
+  
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
+
      <div class="row-fluid">
         <div class="coursesyllabus" >
-  <div style="width:100%;background:#333;float:left;height:100%;margin-top: -11px;" ><ul class="nav nav-tabs1" id="myTab" style="width: 88%;margin:0px auto;">
+  <div style="width:100%;background:#333;float:left;height:100%;margin-top: 0px;" ><ul class="nav nav-tabs1" id="myTab" style="width: 88%;margin:0px auto;">
     <li class="active"><a href="#home1">OVERVIEW</a></li>
     <li><a href="#profile1">ABOUT PROGRAMME</a></li>
     <li><a href="#messages1">ADMISSIONS</a></li>
@@ -131,6 +125,8 @@
   background: url('/assets/greybandcopy.png');background-position-x: 185px;">
   <ul class="nav nav-tabs2" id="myTab1" style="">
     <li class="active"><a href="#home">Analytics as an Opportunity</a></li>
+    <li><a href="#class_profile">Class of 2014 Profile</a></li>
+    <li><a href="#Class_videos">Class Videos</a></li>
     <li><a href="#messages">PGPBA as a Programme</a></li>
      <li><a href="#advantages">Great Lakes  Advantage</a></li>
     <li class="tab-pane"><a href="#Partners">Programme Partners</a></li>
@@ -140,9 +136,40 @@
     <div class="tab-pane active" id="home">
   <div class="aboutcompany">
       <div class="underlinetext" style="text-align:center;">
-        <%= image_tag('Analytics Infographic.jpg') %>
+        <%= image_tag('Analytics Infographic.jpg', :style => "width:650px;") %>
         <br>
   <P style="float: left;padding: 20px 15px;width: 95%;text-align: justify;">Analytics is the next big global opportunity and is witnessing an acute shortage of skilled talent. With leading Indian and global companies scouting for talent, a combination of business management and analytical training can propel a candidate to managerial and leadership roles in the analytics industry.  </p></div>
+  </div></div>
+   <div class="tab-pane" id="class_profile">
+  <div class="aboutcompany">
+      <div class="underlinetext" style="text-align:center;">
+        <%= image_tag('meet_the_class.png', :style => "width:650px;") %>
+     
+  </div>
+  </div></div>
+   <div class="tab-pane" id="Class_videos">
+  <div class="aboutcompany">
+      <div class="underlinetext" style="text-align:center;">
+  <table style="text-align: left;text-decoration: underline;" cellpadding="10">
+  <tr><td colspan="2"><h3>Predicting the Winner of West Bengal Elections</h3></td></tr>
+    <tr><td>
+      <iframe width="300" height="225" style="box-shadow: 10px 5px 10px;" src="//www.youtube.com/embed/D20xqXmz3qA" frameborder="0" allowfullscreen></iframe>
+   <!--  <iframe width="300" height="225" style="box-shadow: 10px 5px 10px;" src="//www.youtube.com/embed/ACU9nPRvGUg" frameborder="0" allowfullscreen></iframe> --></td><td style="vertical-align:middle;">Subject: Statistical Decision Making<br><br>
+Facutly: Prof. Bappaditya Mukhopadhyay</td></tr>
+  <tr><td colspan="2">
+    <h3>
+Importance of Demand Forecasting</h3></td></tr>
+    <tr><td>
+      <iframe width="300" height="225" style="box-shadow: 10px 5px 10px;" src="//www.youtube.com/embed/B8USt2qEVoQ" frameborder="0" allowfullscreen></iframe>
+      <!-- <iframe width="300" height="225" style="box-shadow: 10px 5px 10px;" src="//www.youtube.com/embed/HvLXNyjOSYM" frameborder="0" allowfullscreen></iframe> --></td><td style="vertical-align:middle;"> Subject: Supply Chain and Logistics<br><br>
+Faculty: Prof.Nandi</td></tr>
+  <tr><td colspan="2">
+    <h3>
+What is Analytics?</h3></td></tr>
+    <tr><td><iframe width="300" height="225"  src="//www.youtube.com/embed/uzPfdKqdQa4" frameborder="0" allowfullscreen></iframe></td><td style="vertical-align:middle;">Subject: Overview of Analytics<br><br>
+    Faculty Gaurav Vohra</td></tr>
+</table>     
+  </div>
   </div></div>
     <div class="tab-pane" id="messages" style="padding:20px;">
   <div class="underlinetext">
@@ -184,7 +211,9 @@ Some introductory videos on analytics
   <div class="aboutcompany">
       <div class="underlinetext" >
 <h2>Great Lakes Advantage</h2>
-     <ul style="text-align: justify;"> <li> Great Lakes is one of India's most respected business schools and has been consistently ranked within the top 20 in the country. </li><li>
+     <ul style="text-align: justify;">
+     <li>“Ranked among the Top 5 Analytics Program in India” Analytics India Magazine <a href="http://analyticsindiamag.com/top-6-analytics-courses-in-india/" style="text-decoration:underline;">See Article</a>
+     </li> <li> Great Lakes is one of India's most respected business schools and has been consistently ranked within the top 20 in the country. </li><li>
 Great Lakes is the only business school in India to set up a dedicated Center of Excellence in Analytics. This center has been established with support from leading analytics companies and is dedicated to cutting edge research and training for talent development for the analytics industry.</li><li>
 Great Lakes has academic collaborations with leading institutions such as Yale University, Nanyang Technical University, University of Houston, Illinois Institute of Technology.</li><li>
 The faculty pool at Great Lakes comprises leading faculty from Indian and International institutions such as Harvard Business School, Stanford Graduate School of Business, Kellog School of Business, Stern School of Business, University of Chicago, IIM Ahmedabad, IIM Bangalore, IIM Kolzhikode, IIT Bombay, IIT Delhi, etc</li><li>
@@ -195,23 +224,46 @@ Great Lakes faculty have authored several books and research articles on analyti
 
    <div class="tab-pane" id="Partners" style="padding:20px;">
     <h2>Programme Partners</h2>
-      
-       <div class="underlinetext" style="text-align:center;">
-  <h4 style="text-decoration:underline;text-align: left;">Online Content Partner</h4>
-      <%= image_tag('jigsaw-logo.png') %>
-  <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">Jigsaw academy is the brainchild of Gaurav Vohra and Sarita Digumarti who together have over 20 years of experience in the analytics industry. They have partnered with Priya Gupte who brings marketing expertise to the table. All three have worked in varied industries, across multiple roles and have vastly differing experience, yet together they formed the jigsaw. The common thread across the three is that they believe that the analytics industry is poised to take-off and that Jigsaw Academy can play a crucial role by identifying and nurturing analytic talent in India.</p></div>
-    <div class="underlinetext">
+     <div class="underlinetext" style="text-align:center;">
+  <h4 style="text-decoration:underline;text-align: left;">ACADEMIC PARTNER
+</h4>
+      <%= image_tag('GREAT LAKES LOGO.jpg') %>
+  <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">Great Lakes is one of India’s leading business schools with
+campuses in Chennai and Gurgaon. Led by exceptional faculty,
+steered by an outstanding advisory council, Great Lakes has
+been ranked within top 10 business schools by Outlook,
+Business Today, Careers 360 and CNBC TV 18
+
+</p></div> 
+       
+   <!--  <div class="underlinetext">
     <h4 style="text-decoration:underline;">Corporate Partners</h4>
   <table class="table">
     <tr><td>
-      <%= image_tag('bridge_logo.png', :width=>"175",:height=>"70") %></td><td>
-      <%= image_tag('evalue_logo.png', :width=>"175", :height=>"70") %></td></tr>
-  </table></div>
+      <%#= image_tag('bridge_logo.png', :width=>"175",:height=>"70") %></td><td>
+      <%#= image_tag('evalue_logo.png', :width=>"175", :height=>"70") %></td></tr>
+  </table></div> -->
  <div class="underlinetext" style="text-align:center;">
-  <h4 style="text-decoration:underline;text-align: left;">Technology Partner</h4>
+  <h4 style="text-decoration:underline;text-align: left;">TECHNOLOGY & ADMINISTRATION PARTNER
+</h4>
   <%= image_tag('beaconslogop.png') %><br>
-  <P style="float: left;padding: 10px 15px;width: 95%;text-align: justify;">Beacon Learning is our technology partner and offers innovative and interactive learning management system to enable online learning programmes. The Beacon Learning Management system provides the students with a best-in-class learning environment that makes online learning self paced, interactive and more classroom like.  </p>
+  <P style="float: left;padding: 10px 15px;width: 95%;text-align: justify;">Beacon Learning is a technology enabled learning services
+provider offering high quality professional and skill oriented
+tertiary education for students and working professionals. The
+Beacon learning management system provides the students
+with the best-in-class learning environment that makes online
+learning impactful, interactive and more classroom like.
+</p>
   </div>
+  <div class="underlinetext" style="text-align:center;">
+  <h4 style="text-decoration:underline;text-align: left;">Online Content Partner</h4>
+      <%= image_tag('jigsaw-logo.png') %>
+  <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">Jigsaw Academy imparts analytics training online leveraging
+content developed by analytics experts from around the world.
+The content is highly industry relevant thereby enabling
+learners to understand and apply analytical techniques to real
+world problems.
+</p></div>
 
 </div>
   </div>
@@ -226,19 +278,21 @@ Great Lakes faculty have authored several books and research articles on analyti
   background: url('/assets/greybandcopy.png');background-position-x: 185px;">
   <ul class="nav nav-tabs2" id="myTab1" style="">
     <li class="active"><a href="#Benefits">Programme Benefits</a></li>
-    <li class="tab-pane"><a href="#Details">Programme Details</a></li>
+<!--     <li class="tab-pane"><a href="#Details">Programme Details</a></li>
+ -->    <li class="tab-pane"><a href="#message">Message from the Dean</a></li>
+     <li class="tab-pane"><a href="#Pedagogy">Pedagogy</a></li>
+    <li class="tab-pane"><a href="#Calendar">Calendar</a></li>
     <li class="tab-pane"><a href="#Curriculum">Curriculum</a></li>
     <li class="tab-pane"><a href="#Faculty"> Faculty</a></li>
-    <li class="tab-pane"><a href="#Calendar">Calendar</a></li>
-    <li class="tab-pane"><a href="#Pedagogy">Pedagogy</a></li>
-    <li><a href="#partners">Corporate Partners</a></li>
+    <li><a href="#partners">Industry Interaction</a></li>
+    <li><a href="#Student">Student Testimonials</a></li>
   </ul></div>
 
   <div class="tab-content" style="width: 76%;float: left;padding-top: 30px;">
        <div class="tab-pane active" id="Benefits" style="padding:0px;">
 
   <div class="underlinetext" style="text-align:center;">
-        <%= image_tag('Program Benefits-Infographic.jpg') %>
+        <%= image_tag('program_benifits.png', :style => "width:650px;") %>
  </div>
   </div>
  <div class="tab-pane " id="Details">
@@ -260,9 +314,59 @@ Great Lakes faculty have authored several books and research articles on analyti
      </div>
   </div></div>
 
+   <div class="tab-pane " id="message">
+  <div class="aboutcompany">
+      <div class="underlinetext" style="text-align:center;">
+       <div class="underlinetext">
+      <h2>Message from the Dean</h2>
+     
+        <table><tr><td><%= image_tag('dean.png', :style => "width: 600px;height: 130px;padding-right:10px;position:relative;") %></td>
+          <td><h3 style="font-size:20px;margin-top:0px;line-height:18px;">Padma Shri Dr Bala V Balachandran</h3>
+            <p style="padding: 0px 0px;width: 100%;text-align: justify;word-spacing: -1px;">
+        J L Kellogg Distinguished Professor (Emeritus in Service) of Accounting and Information Management, Northwestern University, Illinois, USA</p><br>
+        Founder & Dean, Great Lakes Institute of Management</td></tr></table>   
+      
+      <p style="float: left;padding: 10px 15px;width: 95%;text-align: justify;font-style:italic;font-weight:bold;">
+        “It is becoming imperative for businesses to draw insights and tangible actions from data. Business Analytics and Business Intelligence are indispensable for today’s managers and business leaders. “
+      </p>
+      <p style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">Great Lakes Institute of Management is delighted to offer a one year Post Graduate Program in Business Analytics and Business Intelligence for working executives (PGP-BA/BI). This program blends Academic Elegance with Business Relevance and paves the way for decision making in the midst of “big data” that bewilders business managers by its sheer size and complexity. </br></br>
+        The Post Graduate Program in Business Analytics and Business Intelligence (PGP-BA/BI) embraces a variety of techniques that can be used by companies to make effective strategic decisions apart from significantly improving   performance in key dimensions. The art of modeling a business problem, then finding the solution using analytics, and finally successfully implementing the solution are the hallmarks of this program.  <br></br>
+        The candidates pursuing this program can expect to gain an overview of business foundation and a comprehensive knowledge of analytic techniques, with an applied industry orientation designed for professionals interested in a career in analytics. <br></br>
+      Exhaustive coverage, Hands-on application, Multi-domain exposure and Deep Industry Immersion are the features that make the Great Lakes’ PGP-BA/BI your gateway to a successful analytics career.</p>
+  </div>
+     </div>
+  </div></div>
+
+   <div class="tab-pane " id="Student">
+  <div class="aboutcompany">
+      <div class="underlinetext" style="text-align:center;">
+       <div class="underlinetext">
+      <h2> Student Testimonials</h2>
+             <p style="padding: 5px 15px;width: 95%;text-align: justify;font-style:italic;">"I appreciate the emphasis placed on connecting theory to practical application. The diverse professional experience of the batch is leveraged by the professors, who let us decide the breadth and depth of topics covered. Two thumbs up for Great Lakes." <br>
+                <b>-Clarence Wong (Consultant at ADP, PGP-BA Student)</b>
+              </p>
+              
+              <p style="padding: 5px 15px;width: 95%;text-align: justify;font-style:italic;">"My journey in great lakes so far has been incredibly informative. Each faculty member is not only a recogonised expert in their respective domain but also have a wealth of life experience which opens our eyes to all the real world scenarios. All in all Great lakes is an experience that everyone should experience." <br>
+                <b>-Sudhanshu Pathak (SAP Consultant at KPMG, PGP-BA Student)</b>
+              </p>
+
+             <p style="padding: 5px 15px;width: 95%;text-align: justify;font-style:italic;">"PGPBA is a very targeted and focused course for professionals wanting to breakthrough in the analytics domain. The course is well structured with respect to content and is backed by great faculty and thus providing a solid platform to foray into the analytics domain." <br>
+                <b>-Karan Seghal ( Associate Vice President, Copal Parters, PGP-BA Student)</b>
+              </p>
+
+              <p style="padding: 5px 15px;width: 95%;text-align: justify;font-style:italic;">"The course coverage is quite exhaustive and in depth. The professors are knowledgeable and coach very well. Overall, the program is good and is getting executed well by Great Lakes." <br>
+                <b>-Lakshmi Prabha (Program Manager, HCL, PGP-BA Student)</b>
+              </p>
+         
+      
+      </div>
+     </div>
+  </div></div>
+
+
 
    <div class="tab-pane" id="Curriculum" style="padding:20px;">
-  <div class="underlinetext">
+ <!--  <div class="underlinetext">
       <h2>Curriculum</h2>
      <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;"> The curriculum of the Programme is designed to expose the candidates to foundations of business management and deep skills in analytics.</p>
   </div>
@@ -273,21 +377,34 @@ Great Lakes faculty have authored several books and research articles on analyti
      <P style="float: left;padding: 10px 15px;width: 95%;text-align: justify;"><b>Hands on exposure:</b> Every module will entail practical assignments that complement the conceptual learning that the candidates would have gathered. These assignments will expose the candidates to solving real world business problems using tools such as SAS, R, Tableau, etc.</p>
   </div>
   <div class="underlinetext">
-     <P style="float: left;padding: 10px 15px;width: 95%;margin-bottom:10px;text-align: justify;"><b>Industry project</b> is a critical component of the curriculum wherein every candidate will work on an actual industry case study. This project will act as an industry application of the learning derived from the course and will need to be presented to the faculty board for successful completion of the course. </p></div>
+     <P style="float: left;padding: 10px 15px;width: 95%;margin-bottom:10px;text-align: justify;"><b>Industry project</b> is a critical component of the curriculum wherein every candidate will work on an actual industry case study. This project will act as an industry application of the learning derived from the course and will need to be presented to the faculty board for successful completion of the course. </p></div> -->
      
 
 
   <div class="underlinetext">
-         <h4>Tools and Technologies covered: <br>
-  SAS, Tableau, R.</h4><br>
+    <h2>Curriculum</h2>
   <table class="table table-bordered table-striped">
-  <tr><td>Module</td><td>Topics</td></tr>
-  <tr><td>Module 1</td><td>Financial Statement Analysis</br>Marketing and CRM</td></tr>
-  <tr><td>Module 2</td><td>Data analysis and Statistics in Decision Making<br>Supply chain and Logistics management<br>Introduction to SAS</td></tr>
-  <tr><td>Module 3</td><td>Advance Statistics<br>Digital commerce<br>Data management, Exploration is Business analytics using SAS</td></tr>
-  <tr><td>Module 4</td><td>Predictive analytics<br>Data mining and visualization<br>Modeling using SAS</td></tr>
-  <tr><td>Module 5</td><td>Optimization techniques<br>Credit risk, fraud and other financial analytics<br>Marketing and retail analytics<br>Web and social media analytics<br>Supply chain and logistics analytics</td></tr>
-  <tr><td>Module 6</td><td>Health analytics<br>Energy analytics<br>Telecom analytics<br>Insurance analytics<br>Project presentation</td></tr>
+  <tr><td>Module</td><td>Courses</td></tr>
+  <tr><td style="vertical-align:middle;">Business Foundation</td><td>Financial Statement Analysis</br>Marketing & CRM</br>
+    Supply Chain & Logistics</br>Digital commerce</br>Sustainable Business Success Factors</td></tr>
+  <tr><td style="vertical-align:middle;">Statitical Techniques</td><td>Data Analysis & Statistical Decision Making<br>Applied Business Statistics</td></tr>
+  <tr><td style="vertical-align:middle;">Business Intelligence</td><td>Data Management  Big Data & Cloud Computing<br>Data Mining Techniques & OLAP</td></tr>
+  <tr><td style="vertical-align:middle;">Predictive Modelling</td><td>Regression<br>Prediction Models & Heuristics</td></tr>
+  <tr><td style="vertical-align:middle;">Optimization and Visualization</td><td>Optimization Modeling<br>Data Visualization </td></tr>
+  <tr><td style="vertical-align:middle;">Application in Industry </td><td>Marketing Analytics<br>Operations Analytics<br>Finance Analytics<br>Web & Social Media Analytics<br>Health, Energy and Telecom</td></tr>
+  </table>
+  <h4>TOOLS TO BE COVERED</h4><br>
+   <table class="table table-bordered table-striped">
+    <tr><td>SAS</td><td>Tableau</td><td>R</td></tr>
+  </table>
+   <h4>EXPERIENTIAL LEARNING</h4><br>
+   <table class="table table-bordered table-striped">
+    <tr><td>Capstone Project</td><td>Virtual Lab</td><td>Case studies/Assignments</td></tr>
+  </table>
+   <h4>ONLINE MODULES</h4><br>
+   <table class="table table-bordered table-striped">
+    <tr><td>Overview of Analytics</td><td>Introduction to SAS</td><td>Analytical Techniques</td></tr>
+    <tr><td>Retail Analytics</td><td>Financial analytics</td><td>Big Data and R</td></tr>
   </table>
   </div>
 
@@ -312,6 +429,26 @@ Dr Panda has worked at Indian Institute of Management at Lucknow, Kozhikode and 
 Dr Jayaraman is an Associate Professor of Operations and Supply Chain Management at the School of Business Administration, University of Miami, Coral Gables, Florida.  Prior to joining the University of Miami, he was an Assistant Professor of Operations and Supply Chain Management at the School of Business Administration, Washington State University as well as an Assistant Professor of Operations and Supply Chain Management at the School of Business Administration, University of Southern Mississippi. <br><br> <h4 style="font-size: 19.5px;margin: 0px;">Dr Himadri Das</h4>
   <span style="color:#797979;">Professor, Great Lakes Institute of Management | Ph D (University of Virginia), B Tech (IIT Delhi)</span> <br><br>
 Dr Das is currently the Director of Great Lakes Institute of Management, Gurgaon. Dr. Himadri Das has B.Tech and MBA degrees from IIT Delhi and MS and Ph.D degrees from University of Virginia. He was associated with IMI, Delhi for 11 years as a Professor of Finance and Information Systems and did serve in variety of academic leadership positions latest being Dean (Academic Programmes). He regularly teaches in business schools internationally as well and has undertaken substantial research and consulting projects.     <br><br>
+
+<h4 style="font-size: 19.5px;margin:0px;">Dr. Bobby Srinivasan</h4>
+  <span style="color:#797979;">Professor - Finance, Great Lakes  | Ph D (Case Western University, USA) </span><br><br>
+Dr. Bobby Srinivasan is currently a distinguished Dr. Bala and Vasantha Balachandran Professor of Finance and Trading and is also the first year PGDM Director. Prior to joining Great Lakes, he worked at the Institute of Financial Management and Research (IFMR) as Distinguished Professor and President of the institute. He holds a Ph.D. in Operations Research from the Case Western University, USA and has since taught in the US, Canada and in Singapore for well over 40 years. While in Singapore, he taught both at the National University of Singapore and Nanyang Technological University, which spanned over a period of 25 years.  <br><br>
+
+<h4 style="font-size: 19.5px;margin:0px;">Prof. Easwar Krishna Iyer</h4>
+  <span style="color:#797979;">Associate Professor - Marketing, Great Lakes MBA (University of Houston), M Tech (IIT Kharagpur)</span><br><br>
+Easwar Krishna Iyer is Associate Professor in Marketing. Prior to Great Lakes, he was Associate Professor at Amrita School of Business (ASB) and Vice Chair of the EMBA program jointly run by ASB and State University of New York, Buffalo. Prior to that, he has extensive research background in the Technology area with several international publications in journals as varied as Electronics Letters, Microwave & Optical Technology Letters and Applied Superconductivity.   <br><br>
+
+<h4 style="font-size: 19.5px;margin:0px;">Dr. Paul Prabhakar</h4>
+  <span style="color:#797979;">Professor, Northern Illinois
+University, USA
+Ph D (University of Rochester)</span> <br><br>
+
+  <h4 style="font-size: 19.5px;margin:0px;">Dr. Sudhakar Balachandran</h4>
+  <span style="color:#797979;">Associate Professor, University of
+Illinois, USA
+Ph D (Harvard Business School)</span> <br><br>
+
+
   <h4 style="font-size: 19.5px;">Industry faculty</h4>
 Senior executives and practitioners who have worked with leading organizations that successfully use analytics such as American Express, Accenture, Evalueserve, Genpact, GE, Capital One, Symphony, Mu Sigma, Absolut Data, etc.  </div>
    </div>
@@ -320,24 +457,23 @@ Senior executives and practitioners who have worked with leading organizations t
        <h4>Calendar</h4>
 
   <table class="table table-striped table-bordered">
-  <thead><th>Month</th><th> Location</th><th>  Description</th></thead>
-  <tr><td>Nov-13 </td><td> Great Lakes, Gurgaon Campus </td><td>Registration & Inaugration</td></tr>
-  <tr><td>Nov-13  </td><td>Great Lakes, Gurgaon Campus </td><td>Classroom Sessions for 5 days</td></tr>
-  <tr><td>Dec-13 </td><td> Online Session </td><td> Online Lectures and Assignments </td></tr>
-  <tr><td>Jan-14</td><td>  Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Feb-14 </td><td> Online Session  </td><td>Online Lectures and Assignments </td></tr>
-  <tr><td>Mar-14 </td><td> Great Lakes, Gurgaon Campus </td><td>Classroom Sessions for 5 days</td></tr>
-  <tr><td>Apr-14 </td><td> Online Session</td><td>  Online Lectures and Assignments </td></tr>
-  <tr><td>May-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Jun-14  </td><td>Online Session</td><td>  Online Lectures and Assignments </td></tr>
-  <tr><td>Jul-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Aug-14 </td><td> Online Session  </td><td>Online Lectures and Assignments </td></tr>
-  <tr><td>Sep-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Classroom Sessions for 5 days</td></tr>
-  <tr><td>Sep-14 </td><td> Great Lakes, Gurgaon Campus</td><td> Graduation </td></tr>
-  <tr><td>Classroom Hours</td><td colspan="2">  240 </td></tr>
+  <thead><th colspan="6" style="text-align:center;">PGP-BABI: Proposed schedule </th></thead>
+  <tr><td>April 2014</td><td> 18-22 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>May 2014</td><td>02-06</td><td>CHENNAI</td></tr>
+ <tr><td>June 2014</td><td> 13-17 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>July 20144</td><td>04-08</td><td>CHENNAI</td></tr>
+ <tr><td>Aug 2014</td><td> 22-26 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>Sep 2014</td><td>5-9</td><td>CHENNAI</td></tr>
+ <tr><td>Oct 2014</td><td> 17-21</td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>Nov 2014</td><td>7-11</td><td>CHENNAI</td></tr>
+ <tr><td>Dec 2014</td><td> 12-16 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>Jan 2015</td><td>09-13</td><td>CHENNAI</td></tr>
+ <tr><td>Feb 2015</td><td> 13-17 </td><td>GGN</td><td></td><td></td><td></td></tr>
+ <tr><td></td><td></td><td></td><td>March 2015</td><td>13-17</td><td>CHENNAI</td></tr>
+  <!-- <tr><td>Classroom Hours</td><td colspan="2">  240 </td></tr>
   <tr><td>Online Hours </td><td colspan="2">  250*  </td></tr>
   <tr><td colspan="3">* Including online lecures assignments,quizzes,lab sessions,etc.   </td></tr> 
-  </table>
+   --></table>
 
       
   </div> </div>
@@ -345,28 +481,27 @@ Senior executives and practitioners who have worked with leading organizations t
   <div class="underlinetext">
        <h2>Pedagogy</h2>
     <h4>  Classroom learning</h4>
-  The classroom sessions would adopt a case study approach to develop conceptual learning of management and analytics. In similar vein as the full time Programmes, the candidates would be required to cover their pre-readings and other associated learning material to be well prepared for these sessions. <br>
+  The program consists of 230 hours of classroom sessions delivered by Great Lakes faculty and industry professionals from the field of analytics. This ensures that the program imbibes Great Lakes’ academic elegance and Industry’s Business relevance, ther providing the candidates a remarkable learning experience.  <br>
    
   <h4>Online Learning Management System (LMS)</h4>
-  The online LMS would be used to host content and live webinars that will enable the candidates to continue their learning while not on campus. In addition to providing an enriching learning environment, the LMS would also encourage collaborative learning between the candidates.
+All candidates have an access to the online LMS that hosts content (classroom recording, online lectures, assignments, reading material) and live webinars to enable the candidates continue their learning during off campus. The LMS provides an innovative learning environment that encourages collaborative approach between the candidates thus paving the way for maximizing learning effectiveness and clarity.  
    <br><br>
-  <h4>Virtual Lab</h4>
-  The virtual lab is a simulation environment that would be used by candidates for practicing exercises and assignments on tools such as SAS. The exposure on virtual lab would help candidates acquire hands on experience of analytical skills and techniques that are valued in the industry.
+  <h4>Experiential Learning through Virtual Lab</h4>
+This program is designed to transform candidates to business ready analytics professionals through hands on experiential learning on relevant tools.  The virtual lab provides an experiential learning format and is used by  candidates for practicing exercises and assignments on software packages such as SAS, R, etc.    <br><br>
+  <h4>Industry Perspective Lectures</h4>
+This is a critical component of the program that complements and substantiates the learning with an applied orientation. The participants get the opportunity to listen to eminent speakers from leading analytics companies and assimilate the best practices discussed by them in their lectures  .   <br><br>
+  <h4>Capstone Project</h4>
+All candidates would be pursuing an industry project in the field of Business Analytics. The project is mentored and jointly evaluated by faculty from Great Lakes and Industry leaders. The project will be presented to the faculty board as part of the requirement for successful completion of the program. 
    <br><br>
-  <h4>Industry Lectures</h4>
-  Industry Lectures are a key aspect of the Programme as they complement the learning in class by actual case studies from the industry discussed by senior executives from leading analytics companies. 
-   <br><br>
-  <h4>Industry Project</h4>
-  The Industry project would be a live project done in conjunction with a company, which will be performed under the guidance of a faculty from Great Lakes. This will be an individual project and will be presented to the faculty board for successful completion of the Programme.
-
-
+  <h4> Program Format</h4>
+This program has about 380 hours of learning comprising 230 hours of classroom learning and 100 hours of online/ off classroom. The participants would visit the campus on one weekend every month.   
   </div> </div>
 
 
    <div class="tab-pane" id="partners" style="padding:20px;">
   <div class="underlinetext">
-       <h2>Corporate Partners</h2>
-       <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">The Post Graduate Programme in Business Analytics offered by Great Lakes is conceived, and delivered in collaboration with the following Corporate Partners:</p><br>
+       <h2> Industry Interaction</h2>
+       <P style="float: left;padding: 0px 15px;width: 95%;text-align: justify;">A distinguishing feature of the PGP-BABI pedagogy is the invaluable insights and mentorship that participants get from leading practitioners and senior industry executives. Organizations from which experts shall be contributing to our lectures, projects and case studies include:</p><br>
             <table class="table">
 
    <tr><td><%= image_tag("bridge_logo.png", :width=>"175", :height=>"70")%></td><td>
@@ -391,15 +526,15 @@ Senior executives and practitioners who have worked with leading organizations t
     <li><a href="#Deadlines">Deadlines</a></li>
     <li><a href="#sponsor">Sponsor an employee</a></li>
     <li><a href="#faq">FAQs</a></li>
-    </ul><ul class="nav nav-tabs2" style="">
-  <li style="margin-top: -20px;"><a href="/application" >Apply Now</a></li></ul>
+    </ul><ul class="nav nav-tabs2" style="margin-top:-20px;">
+  <li><a href="/application" >Apply Now</a></li></ul>
   </div>
 
   <div class="tab-content active" style="width: 75%;float: left;padding-top: 30px;">
      <div class="tab-pane active" id="Overview">
        <div class="underlinetext" style="text-align:center;">
 
-        <%= image_tag("Admissions-Infographic1.jpg")%>
+        <%= image_tag("admission_details.png", :style => "width:650px;")%>
        </div>
      </div>
     <div class="tab-pane " id="Fees">
@@ -409,7 +544,7 @@ Senior executives and practitioners who have worked with leading organizations t
    <table class="table table-bordered table-striped"><thead style="background: #8F8888;"><tr><th>Issue of application starts from</th>
     <th>Last date of submission for first cycle</th> </tr></thead>
     <tbody>
-      <tr><td>23th September 2013</td><td>19th October 2013</td></tr>
+      <tr><td>21st February 2014</td><td>7th March 2014</td></tr>
     </tbody></table>
   Candidates meeting the following conditions are eligible for pursuing the PGP-BA Programme:<br>
   <ul>
@@ -444,10 +579,11 @@ Senior executives and practitioners who have worked with leading organizations t
        <table class="table table-bordered table-striped"><thead style="background: #8F8888;"><tr><th>Event</th>
     <th>Deadline</th></tr></thead>
     <tbody>
-      <tr><td>Issue of Application begins</td><td>23rd September, 2013</td></tr>
-     <tr><td>First cycle admissions</td><td>23rd September, 2013 - 25th October, 2013</td></tr>
-  <tr><td>First cycle results</td><td>25th October, 2013</td></tr>
-  <tr><td>Batch Commencement</td><td>29th November, 2013 Onwards</td></tr>
+      <tr><td>Issue of Application begins</td><td>21st February, 2014</td></tr>
+     <tr><td>First cycle admissions</td><td>21st February, 2014 - 7th March, 2014</td></tr>
+  <tr><td>First cycle results</td><td>1st March, 2014 - 8th March, 2014</td></tr>
+  <tr><td>Batch Commencement</td><td>Gurgaon – 11th April, 2014</td></tr>
+  <tr><td></td><td>Chennai – 1st May, 2014</td></tr>
   </tbody></table>
   The second cycle of admissions is currently underway and is a rolling process wherein the candidates are interviewed as they apply and the admissions conclude as soon as the desired class size is achieved
   </div></div>
@@ -474,10 +610,11 @@ Senior executives and practitioners who have worked with leading organizations t
     <div class="left" style="margin-top: 40px;margin-left: 10px;padding-left: 10px;float: left;
   height: 760px;background: url('/assets/greyband1.png');"><table cellpadding="5" style="margin-bottom:20px;"><tr><td><%= image_tag("apply.png")%></td><td><h4><a href="/application" class="hover" >Apply Now</a></h4></td></tr></table>
       <table cellpadding="5" style="margin-bottom:20px;"><tr><td><%= image_tag("dwnld.png")%></td><td><h4><a href="#downloadpopupmodal" class="hover" role="button" data-toggle="modal">View<br> Brochure</a></h4></td></tr></table>
-  <table cellpadding="5" style="margin-bottom:20px;" ><thead><a href="#programpopupmodal" role="button" data-toggle="modal"><h4>Programme Overview</h4></a></thead><tr><td>
-    <%= image_tag("benifits.png", :width=>"40", :height=>"40", :style=>"max-width:40px;")%></td><td> <a href="#programpopupmodal" role="button" data-toggle="modal">Learn more about the PGPBA Programme through an INFOGRAPHIC</a></td></tr></table>
+  <!-- <table cellpadding="5" style="margin-bottom:20px;" ><thead><a href="#programpopupmodal" role="button" data-toggle="modal"><h4>Programme Overview</h4></a></thead><tr><td>
+    <%#= image_tag("benifits.png", :width=>"40", :height=>"40", :style=>"max-width:40px;")%></td><td> <a href="#programpopupmodal" role="button" data-toggle="modal">Learn more about the PGPBA Programme through an INFOGRAPHIC</a></td></tr></table> -->
   <table cellpadding="5" style="margin-bottom:20px;"><thead><h4>Contact Us</h4></thead><tr><td>
     <%= image_tag("contact.png")%></td><td><b>E:</b><a href="mailto:pgpba@greatlakes.edu.in" target="_top">pgpba@greatlakes.edu.in</a><br><b>T:</b>87506-48238</td></tr></table>
+    <table cellpadding="5" style="margin-bottom:20px;"><tr><td><a href="https://classroom.beaconlearning.in/login" target="_top"><%= image_tag("lock.png", :style=>"width:40px;height:40px;")%></a></td><td><h4><a href="https://classroom.beaconlearning.in/login" target="_top">Student Login</a></h4></td></tr></table>
   <!-- <table cellpadding="5" ><thead><h4>FAQs</h4></thead><tr><td><img src="/assets/faq.png"></td><td>the technology and content platform at Beacon Learning.</td></tr></table> -->
     </div></div>
   </div></div></div>
