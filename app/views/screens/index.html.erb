@@ -109,9 +109,11 @@ th{text-align: center !important;background:#fff ;}
   </ol>
   
   <div class="carousel-inner">
-    <div class="active item"><%= image_tag('banner01.jpg') %> <a href="/application" target='blank' class="offset8 btn" style="color: transparent;
-position: absolute;margin-top: -10%;font-weight: bold;font-size: 20px;width: 240px;left: 5%;background: transparent;
-border: none;text-shadow: 0px 0px 0px;">ENROLL TO THE PROGRAM NOW</a> </div>
+    <div class=" active item"><%= image_tag('banner03.jpg') %>
+    <a href="" class="offset7 btn" style="color: transparent;position: absolute;margin-top: -6%;font-weight: bold;
+font-size: 20px;width: 245px;left: 10%;background: transparent;border: none;text-shadow: 0px 0px 0px;box-shadow:0px 0px 0px;", remote="true", data-toggle="tab", data-target="#Class_videos",
+    <%= root_path(:format => :js) %>>View a sample class video</a> </div>
+    
     <div class="item"><%= image_tag('banner02.jpg') %>
       <a href="" class="offset7 btn" style="color: transparent;position: absolute;margin-top: -6.28%;
 font-weight: bold;font-size: 26px;width: 246px;left: 3%;background: transparent;
@@ -120,10 +122,10 @@ text-shadow: 0px 0px 0px;", remote="true", data-toggle="tab", data-target="#Clas
     <%= root_path(:format => :js) %>>WATCh A CLASS VIDEO</a>
 <a href="/application" target='blank' class="offset4 btn" style="color: transparent;position: absolute;
 margin-top: -6.28%;font-weight: bold;font-size: 20px;width: 245px;left: 4.5%;background: transparent;border: none;text-shadow: 0px 0px 0px;">ENROLL TO THE PROGRAM NOW</a> </div>
-    <div class="item"><%= image_tag('banner03.jpg') %>
-    <a href="" class="offset7 btn" style="color: transparent;position: absolute;margin-top: -6%;font-weight: bold;
-font-size: 20px;width: 245px;left: 10%;background: transparent;border: none;text-shadow: 0px 0px 0px;box-shadow:0px 0px 0px;", remote="true", data-toggle="tab", data-target="#Class_videos",
-    <%= root_path(:format => :js) %>>View a sample class video</a> </div>
+<div class="item"><%= image_tag('banner01.jpg') %> <a href="/application" target='blank' class="offset8 btn" style="color: transparent;
+position: absolute;margin-top: -10%;font-weight: bold;font-size: 20px;width: 240px;left: 5%;background: transparent;
+border: none;text-shadow: 0px 0px 0px;">ENROLL TO THE PROGRAM NOW</a> </div>
+    
   </div>
   
   <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
@@ -139,12 +141,10 @@ font-size: 20px;width: 245px;left: 10%;background: transparent;border: none;text
     <li><a href="#profile1">ABOUT PROGRAM</a></li>
     <li><a href="#messages1">ADMISSIONS</a></li>
   </ul></div>
-    <div class="container" >
+    <div class="container">
         <div class="">
          <div class="span12" >
-        <div class="tab-content" style="width: 73%;
-  padding: 0px;
-  float: left;">
+        <div class="tab-content" style="width: 73%;padding: 0px;float: left;">
     <div class="tab-pane active" id="home1">
       <div class="" style="width:100%">
       <div class="tabbable tabs-left" > 
@@ -165,7 +165,7 @@ font-size: 20px;width: 245px;left: 10%;background: transparent;border: none;text
       <div class="underlinetext" style="text-align:center;">
         <%= image_tag('Analytics_Infograhic.jpg', :style => "width:650px;") %>
         <br>
-  <P style="float: left;padding: 20px 15px;width: 95%;text-align: justify;">Analytics is the next big global opportunity and is witnessing an acute shortage of skilled talent. With leading Indian and global companies scouting for talent, a combination of business management and analytical training can propel a candidate to managerial and leadership roles in the analytics industry.  </p></div>
+  <!-- <P style="float: left;padding: 20px 15px;width: 95%;text-align: justify;">Analytics is the next big global opportunity and is witnessing an acute shortage of skilled talent. With leading Indian and global companies scouting for talent, a combination of business management and analytical training can propel a candidate to managerial and leadership roles in the analytics industry.  </p> --></div>
   </div></div>
    <div class="tab-pane" id="class_profile">
   <div class="aboutcompany">
