@@ -2,7 +2,7 @@
 <html>
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PGPBA</title>
+    <title>Great Lakes Analytics Program</title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
      <%= favicon_link_tag 'favicon.ico', :size => "16x16"%>
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -43,7 +43,13 @@
   
 	  <%= yield %>
 	  <%= render 'layouts/program_popup' %>
-    
+    <script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?1JPULCVdUq4EPLVvAt0SZ9QtnrtEk7O3';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
 	</div>
   </div>
 </div>
