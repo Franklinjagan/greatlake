@@ -7,7 +7,7 @@
      <%= favicon_link_tag 'favicon.ico', :size => "16x16"%>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application"%>
-    
+
        <script type="text/javascript"> 
  // (function() {
  //  var a = document.createElement('script');a.type = 'text/javascript'; a.async = true; 
@@ -69,13 +69,8 @@ var google_remarketing_only = true;
   
 	  <%= yield %>
 	  <%= render 'layouts/program_popup' %>
-    <script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
-$.src='//cdn.zopim.com/?1JPULCVdUq4EPLVvAt0SZ9QtnrtEk7O3';z.t=+new Date;$.
-type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
-</script>
+    <%= render 'layouts/privacy_popup' %>
+ 
 	</div>
   </div>
 </div>
