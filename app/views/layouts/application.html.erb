@@ -7,6 +7,7 @@
      <%= favicon_link_tag 'favicon.ico', :size => "16x16"%>
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application"%>
+    
        <script type="text/javascript"> 
  // (function() {
  //  var a = document.createElement('script');a.type = 'text/javascript'; a.async = true; 
@@ -14,7 +15,13 @@
  //  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(a, s);
  //       })();
 </script> 
-
+<script type="text/javascript">   
+  jQuery(document).ready(function() {
+  jQuery(".fancybox").fancybox({
+  });
+  jQuery('#Name').focus();
+});
+</script>
 <!-- Google Code for Remarketing Tag -->
 <!--
 Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup

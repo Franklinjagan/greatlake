@@ -1,4 +1,14 @@
 ---
+OpenSans-Regular.ttf: OpenSans-Regular-2d81b30d30c4e8e9bfab43363ce6695b.ttf
+OpenSans-Regular/index.ttf: OpenSans-Regular-2d81b30d30c4e8e9bfab43363ce6695b.ttf
+OpenSans-Semibold.ttf: OpenSans-Semibold-6a7c630b7a5430242c64c239860b6bbe.ttf
+OpenSans-Semibold/index.ttf: OpenSans-Semibold-6a7c630b7a5430242c64c239860b6bbe.ttf
+OpenSans-SemiboldItalic.ttf: OpenSans-SemiboldItalic-40e837b36689d6b053a7f50de422a331.ttf
+OpenSans-SemiboldItalic/index.ttf: OpenSans-SemiboldItalic-40e837b36689d6b053a7f50de422a331.ttf
+gadugi.ttf: gadugi-96c5ba244492f22ea49055b09635d680.ttf
+gadugi/index.ttf: gadugi-96c5ba244492f22ea49055b09635d680.ttf
+gadugib.ttf: gadugib-97ef5422ff261406f2ff149366fc25ef.ttf
+gadugib/index.ttf: gadugib-97ef5422ff261406f2ff149366fc25ef.ttf
 1.jpg: 1-b77857fd8fd3159bc07c3c12bdd1cec0.jpg
 1/index.jpg: 1-b77857fd8fd3159bc07c3c12bdd1cec0.jpg
 100-netprogramming.png: 100-netprogramming-0ab29bdedff3d2630a22d7e2139aceed.png
@@ -474,10 +484,10 @@ youtube.png: youtube-b842e45229c122a1e1a99f127a219bba.png
 youtube/index.png: youtube-b842e45229c122a1e1a99f127a219bba.png
 zbeaconslogo.png: zbeaconslogo-874667d48e25f0aa850bf9769ea6f2f1.png
 zbeaconslogo/index.png: zbeaconslogo-874667d48e25f0aa850bf9769ea6f2f1.png
-application.js: application-1adae0616a8b9d86a6aca4edf4b2724e.js
-application/index.js: application-1adae0616a8b9d86a6aca4edf4b2724e.js
-application.css: application-24cd12aa5d12e041fbad445c3963dceb.css
-application/index.css: application-24cd12aa5d12e041fbad445c3963dceb.css
+application.js: application-f8effe58f5a53389123a543ef8c460fc.js
+application/index.js: application-f8effe58f5a53389123a543ef8c460fc.js
+application.css: application-72a23e908d6f41be022183a3952750f2.css
+application/index.css: application-72a23e908d6f41be022183a3952750f2.css
 fancybox_loading.gif: fancybox_loading-5e878dc3d52fae0c9f3f0d6745837e68.gif
 fancybox_loading/index.gif: fancybox_loading-5e878dc3d52fae0c9f3f0d6745837e68.gif
 fancybox_overlay.png: fancybox_overlay-dca142952381a915f6dc4181bc16ad41.png
