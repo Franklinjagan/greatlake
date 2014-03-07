@@ -2,7 +2,7 @@
 <html>
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Great Lakes Analytics Program</title>
+    <title><%= yield(:title) %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails Bootstrap" %>">
      <%= favicon_link_tag 'favicon.ico', :size => "16x16"%>
     <%= stylesheet_link_tag "application", :media => "all" %>
