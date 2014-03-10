@@ -6,6 +6,7 @@ Greatlakes::Application.routes.draw do
 match '/pgpba',:to=>'screens#index'
 match '/businessanalyticsprogram',:to=>'screens#home'
 match '/businessanalyticsprogram/group1',:to=>'screens#home'
+match '/businessanalyticsprogram/thanks',:to=>'screens#thanks'
 match '/businessanalyticsprogram/group2',:to=>'screens#home'
 match '/businessanalyticsprogram/group3',:to=>'screens#home'
 match '/application',:to=>'certified_program_users#new'
