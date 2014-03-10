@@ -20,11 +20,12 @@
 
 
 .topbannerarea .headingbig,.topbannerareathanks .headingbig{
-	font:43px 'Gadugi';
-	line-height:50px;
+	font: 47px "Gadugi" !important;
+	line-height: 50px;
+	font-weight: bold !important;
 }
 .smallheading{
-	font-size:18px;
+	font-size:18px;	
 }
 .red,.red a{
 	color:#d31a2b;
