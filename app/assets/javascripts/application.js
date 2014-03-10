@@ -81,3 +81,11 @@
          });
 
 
+ $('#myTab a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  })
+  $('#myTab1 a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  })
