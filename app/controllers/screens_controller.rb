@@ -13,6 +13,8 @@ class ScreensController < ApplicationController
 		
 	end
 
+	
+
 	def download_pdf_pgpba
 		path = "#{Rails.root}/public/pdf/Business_Analytics_Program_Great_Lakes.pdf"
 		send_data File.read(path),:filename => "Opportunities in Analytics - Great Lakes.pdf",:type => "application/pdf" ,disposition: "attachment"
