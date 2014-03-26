@@ -14,6 +14,7 @@ match '/download_pdf_pgpba',:to=>'screens#download_pdf_pgpba'
 match '/download_brchr_pgpba',:to=>'screens#download_brchr_pgpba'
 match '/terms-of-use',:to=>'screens#terms'
 match '/privacy-policy',:to=>'screens#privacy'
+match '/marketing', :to=>'screens#marketing'
 resources :certified_program_users
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

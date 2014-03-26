@@ -13,6 +13,10 @@ class ScreensController < ApplicationController
 		
 	end
 
+	def marketing
+		
+	end
+
 	
 
 	def download_pdf_pgpba
