@@ -17,6 +17,9 @@ class ScreensController < ApplicationController
 		
 	end
 
+	def landing_page
+	end
+
 	
 
 	def download_pdf_pgpba

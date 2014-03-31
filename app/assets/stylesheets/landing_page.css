@@ -288,18 +288,6 @@ select{
 }
 
 
-
-
-
-.orange-button{
-	background:url(../images/submit-button.png) no-repeat;
-    width:82%;
-	margin:10px 30px;
-	height:82px;
-	border:0px;
-	cursor:pointer;
-}
-
 .orange-button:hover{
 	opacity:0.9;
 }
