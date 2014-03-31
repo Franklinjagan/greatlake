@@ -13,6 +13,10 @@ class ScreensController < ApplicationController
 		
 	end
 
+	def thanks1
+		
+	end
+
 	def marketing
 		
 	end
@@ -20,11 +24,14 @@ class ScreensController < ApplicationController
 	def landing_page
 	end
 
-	
+	def pdf_download_pgpba
+		path = "#{Rails.root}/public/pdf/Great-Lakes-PGPBA.pdf"
+		send_data File.read(path),:filename => "Great-Lakes-PGPBA",:type => "application/pdf" ,disposition: "attachment"
+	end
 
 	def download_pdf_pgpba
-		path = "#{Rails.root}/public/pdf/Business_Analytics_Program_Great_Lakes.pdf"
-		send_data File.read(path),:filename => "Careers in Analytics - Great Lakes.pdf",:type => "application/pdf" ,disposition: "attachment"
+		path = "#{Rails.root}/public/pdf/Careers_in_Analytics_Great_Lakes.pdf"
+		send_data File.read(path),:filename => "Careers_in_Analytics_Great_Lakes.pdf",:type => "application/pdf" ,disposition: "attachment"
 	end
 
 	def download_brchr_pgpba
