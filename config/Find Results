@@ -1,0 +1,35 @@
+Searching 784 files for "Program Schedule"
+
+/home/sysadmin/dev/greatlakes/app/views/screens/index.html.erb:
+  224   -->    <li class="tab-pane"><a href="#message">Message from the Dean</a></li>
+  225       <li class="tab-pane"><a href="#Pedagogy">Pedagogy</a></li>
+  226:     <li class="tab-pane"><a href="#Calendar">Program Schedule</a></li>
+  227      <li class="tab-pane"><a href="#Curriculum">Curriculum</a></li>
+  228      <li class="tab-pane"><a href="#Faculty"> Faculty</a></li>
+  ...
+  400     <div class="tab-pane" id="Calendar" style="padding:20px;">
+  401    <div class="underlinetext">
+  402:        <h4>Program Schedule</h4>
+  403   <table class="table table-striped table-bordered" >
+  404   <thead> <th colspan="3" style="background: #666565;color:#fff;">    Program Classroom Schedule (Gurgaon)</th> </thead>
+
+2 matches in 1 file
+
+
+Searching 229 files for "get it now"
+
+/home/sysadmin/dev/greatlakes/app/views/screens/group1.html.erb:
+  184  <tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.fullpath() %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
+  185    <tr><td  
+  186:   align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
+  187    <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
+  188    checkMandatery(){for(i=0;i<mndFileds.length;i++){ var 
+
+/home/sysadmin/dev/greatlakes/app/views/screens/home.html.erb:
+  184  <tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.fullpath() %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
+  185    <tr><td  
+  186:   align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
+  187    <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
+  188    checkMandatery(){for(i=0;i<mndFileds.length;i++){ var 
+
+2 matches across 2 files

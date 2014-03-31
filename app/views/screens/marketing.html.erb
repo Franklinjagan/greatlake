@@ -57,7 +57,8 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
   '')).length==0){alert(fldLangVal[i] +' cannot be empty'); 
   fieldObj.focus(); return false;}else 
   if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] 
-  +' cannot be none'); fieldObj.focus(); return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>  
+  +' cannot be none'); fieldObj.focus(); return false;}}else { window.open("/download_pdf_pgpba");}}}}
+  </script>  
   </form></div>
 </div>
 </td></tr></table>
@@ -193,6 +194,7 @@ return false;
 
 $(document).ready(function()
 {
+  alert('ok')
 var URLParser = function (url) {
     this.url = url || window.location.href;
     this.urlObject = this.parse(); 
@@ -265,116 +267,78 @@ URLParser.prototype = {
 
 var up = new URLParser();
 var urlObj = up.parse(window.location.href);
-var soksid=urlObj.params['soksid'];
+// var soksid=urlObj.params['soksid'];
 var utm_source=urlObj.params['utm_source'];
-var utm_campaign=urlObj.params['utm_campaign'];
-var Soksid = document.getElementById("soksid");
-Soksid.value = urlObj.params['soksid'];
-var Utmsource = document.getElementById("utmsource");
-utmsource.value = urlObj.params['utm_source'];
+// var utm_campaign=urlObj.params['utm_campaign'];
+// var Soksid = document.getElementById("soksid");
+// Soksid.value = urlObj.params['soksid'];
+// var Utmsource = document.getElementById("utmsource");
+// utmsource.value = urlObj.params['utm_source'];
 var Utmcampign = document.getElementById("utmcampaign");
-utmcampaign.value = urlObj.params['utm_source'];
+Utmcampign.value = urlObj.params['utm_source'];
 });
 
 </script>
   
-<div class='popup'>
+<div class='popup '>
 <div class='cnt223'>
-<!-- <a title="Close" data-dismiss="modal" aria-hidden="true" class="fancybox-item fancybox-close" href="javascript:;"></a> -->
+<a title="Close"  class="fancybox-item fancybox-close" href="/"></a>
 <p>
- <div class="formpart" style="border:none;">
+   <div class="formpart" style="border:none;">
   <div style="width: 53%;padding: 5px 0px;font-size: 20px;margin: 0px 135px;text-align: center;
 background: #081B42;box-shadow: 0px 0px 0px;-webkit-box-shadow: inset 0px 0px 0px #353942, 0px 3px 0px 0px #353942;-moz-box-shadow: inset 0px 0px 0px #353942, 0px 3px 0px 0px #353942;
 -o-box-shadow: inset 0px 0px 0px #353942, 0px 3px 0px 0px #84101b;box-shadow: inset 0px 0px 0px #353942, 0px 3px 0px 0px #353942;color:#fff;font-weight:normal;border-radius:5px;">
 Get Free <span style="color:#FFA72D;font-weight:bold;">e-book</span> on<br>
 <span style="color:#FFA72D;font-weight:bold;">“Careers in Analytics”</span>
   </div>
-    <!-- <div id='crmWebToEntityForm' align=center>
-    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>  
-  <form action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads788461000000067005' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' 
-  accept-charset='UTF-8' ><table border=0 cellspacing=0 cellpadding=5 
-  width=250 style='float:right;margin: 100px 0px 0px 0px;'>  <input type='text' 
-  style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/> 
-  <input type='hidden' name='zc_gad' 
-  id='zc_gad' value=''/>  <input type='text' style='display:none;' 
-  name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  
-  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
-  <input type='text' style='display:none;' name='returnURL' value='http://pgpba.greatlakes.edu.in/' /> 
-  <tr><td colspan='2' align='left' 
-style='font-size:22px;font-style:italic;display:none;'><strong>Free instant access</strong></td></tr>
-  <tr><td nowrap style='font-family:sans-serif;font-size:12px;display:none;font-weight:bold' align='right' width='1%' >Last Name &nbsp;&nbsp;:</td><td 
-  width='75%'><input type='text' maxlength='80' name='Last Name' placeholder="Name*" /> 
-  </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='100' name='Email' placeholder="Email*"/> </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'>
-<input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM_Campaign &nbsp;&nbsp;:</td><td width='75%'>
-  <input type='hidden' maxlength='55' name='LEADCF5' id="utmcampaign" /> </td></tr> 
-<tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.fullpath() %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
-  <tr><td  
-  align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
-  <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
-  checkMandatery(){for(i=0;i<mndFileds.length;i++){ var 
-  fieldObj=document.forms['WebToLeads788461000000067005'][mndFileds[i]];if(fieldObj) 
-  {if(((fieldObj.value).replace(/^\s+|\s+$/g, 
-  '')).length==0){alert(fldLangVal[i] +' cannot be empty'); 
-  fieldObj.focus(); return false;}else 
-  if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] 
-  +' cannot be none'); fieldObj.focus(); return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>  
-  </form></div> --> <div id='crmWebToEntityForm' align='center'>
-    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>
-    <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads788461000000067005 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' accept-charset='UTF-8'>
-  <input type='text' style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/>
-  <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
-  <input type='text' style='display:none;' name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>
-  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/>
-  <input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;pgpba.greatlakes.edu.in' />
-  <br>
-  <table border=0 cellspacing=0 cellpadding='0' width="100%" >
-  <!--  <tr>
-      <td colspan='2' align='left' style='color:black;font-family:Arial;font-size:14px;'><strong>LP form</strong></td>
-    </tr> 
-    <br>-->
-    <tr>
-      <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Full Name<span style='color:red;'>*</span></td>-->
-      <td><input type='text' maxlength='80' name="Last Name" id="Name" placeholder="Full Name" class="textbox"/>
-      
-    
-      </td>
+<div id='crmWebToEntityForm' align='center'><META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>  
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads788461000000656001 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' accept-charset='UTF-8'> 
+   <input type='text' style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/> 
+    <input type='hidden' name='zc_gad' id='zc_gad' value=''/>  
+    <input type='text' style='display:none;' name='xmIwtLD' value='mJKTOQCzg8dqY2V2SPLp8W-@B6-MHnNR'/> 
+     <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> <input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;pgpba.greatlakes.edu.in&#x2f;' /> 
+     <br>
+     <table border=0 cellspacing=0 cellpadding='0' width="100%">
+      <!-- <tr>
+        <td colspan='2' align='left' style='color:black;font-family:Arial;font-size:14px;'><strong>marketing</strong></td>
       </tr>
-    <tr>
-      <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Contact number<span style='color:red;'>*</span></td>-->
-      <td><input type='text' maxlength='30' name="Phone" id="Phone" placeholder="Contact number" class="textbox"/>
+       <br> -->
+       <tr>
+       <!--  <td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Full Name<span style='color:red;'>*</span> </td> -->
+             <td><input type='text' maxlength='80' name="Last Name" id="Name" placeholder="Full Name" class="textbox"/> </td>
+      </tr>
+      <tr>
+<!--         <td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Contact Number<span style='color:red;'>*</span> </td> -->
+<td><input type='text' maxlength='30' name="Phone" id="Phone" placeholder="Contact number" class="textbox"/>
         </td>
-    </tr>
-    <tr>
-      <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Email address<span style='color:red;'>*</span></td>-->
-      <td><input type='text' maxlength='100' name="Email" placeholder="Email address" class="textbox">
-        </td>
-    </tr>
-     <tr style='display:none;' >
-     <td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;' width='50%'>UTM_Campaign </td>
-    <td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='96' name='LEADCF5' id="utmsource">
        </tr>
-    <tr>
+      <tr><!-- <td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Email Address<span style='color:red;'>*</span> </td> -->
+         <td><input type='text' maxlength='100' name="Email" placeholder="Email address" class="textbox">
+        </td>
+        
+      </tr>
+       <tr style='display:none;' >
+     <td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;' width='50%'>UTM_Campaign </td>
+    <td style='width:250px;' ><input type='text' style='width:250px;'  maxlength='96' name='LEADCF5' id="utmcampaign"></td>
+       </tr>
+  <tr>
       <td colspan='2' align='center' style='padding-top: 15px;' ><input type='submit' value='Get It Now!' class="orange-button" />
 </td>
     </tr>
-       <tr>
+      <tr>
       <td colspan='2' align='center' style='padding-top: 5px;font-size: 11px;color: #B3B1B1;' >Your information will be remain safe. <a href="#privacy"  role="button" data-toggle="modal" style="color: #B3B1B1;text-decoration:underline;">privacy policy</a>
 </td>
     </tr>
 
-  </table>
-  <script> var mndFileds=new Array('Last Name','Email','Phone');var fldLangVal=new Array('Full Name','Email address','Contact number');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads788461000000067005'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>
-</form>
+     </table>
+
+        <script> var mndFileds=new Array('Last Name','Email','Phone');var fldLangVal=new Array('Full Name','Email Address','Contact Number');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads788461000000656001'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>  </form>
+      </div>
+<a href='/' class='close fancybox-item fancybox-close'></a> 
+
 </div>
-</div>
-<br/>
-<br/>
-<!-- <a href='/pgpba' class='close'>Close</a> -->
-</p>
+
+ 
 </div>
 </div>
 

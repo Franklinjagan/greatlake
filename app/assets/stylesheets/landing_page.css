@@ -1,15 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-@font-face{
-	font-family:'Open sans';
-	src:url(http://centronicssupport.in/clients/GL/lp/font/OpenSans-Regular.ttf);
-	
-	font-family:'Gadugi';
+@font-face{	
+	font-family:Gadugi!important;
 	src:url(http://centronicssupport.in/clients/GL/lp/font/gadugi.ttf);
 	
-	font-family:'Gadugi';
-	src:url(gadugib.ttf);
+    font-family:'Gadugi bold'!important;
+	src:url(http://centronicssupport.in/clients/GL/lp/font/gadugib.ttf);
 }
 
 .clear{
@@ -17,18 +14,16 @@
 }
 
 
-
-
 .topbannerarea .headingbig,.topbannerareathanks .headingbig{
-	font: 47px "Gadugi" !important;
-	line-height: 50px;
-	font-weight: bold !important;
+	font:40px 'Gadugi bold'!important;
+	line-height:50px;
+	font-weight:bold!important;
 }
 .smallheading{
-	font-size:18px;	
+	font:17.9px 'Open Sans', sans-serif!important;
 }
 .red,.red a{
-	color:#d31a2b;
+	color:#033745;
 }
 .blackregular, .blackregular a{
 	color:#363636!important;
@@ -37,7 +32,10 @@
 	font-weight:bold!important;
 }
 .lineheight25{
-	line-height:25px;
+	line-height:25px!important;
+}
+.lineheight28{
+	line-height:28px!important;
 }
 .mtbottom20{
 	margin-bottom:20px;
@@ -64,7 +62,7 @@
 	font-size:13px;
 }
 .font14{
-	font-size:14px;
+	font-size:14px!important;
 }
 .lineheight18{
 	line-height:18px;
@@ -76,6 +74,9 @@
 .pbottom20{
 	margin-bottom:10px!important;
 }
+.pbottom70{
+	margin-bottom:70px!important;
+}
 .aligncenter{
 	text-align:center;
 }
@@ -84,6 +85,9 @@
 }
 .floatleft{
 	float:left;
+}
+.small1{
+	font-size:14px;
 }
 .smalltext{
 	font-size:12px;
@@ -110,7 +114,7 @@
 .topbannerarea{
 	background:url(../images/bannerbg.jpg) no-repeat right;
 	padding:50px 0px 0px 60px;
-	height:414px;
+	height:412px;
 }
 .topbannerareathanks{
 	background:url(../images/thanks-banner.jpg) no-repeat;
@@ -125,7 +129,7 @@
 }
 .yellowpart .left{
 	float:left;
-	width:319px;
+	font-size:17px;
 }
 .yellowpart .center{
 	float:left;
@@ -134,17 +138,19 @@
 }
 
 .frmarea .infopart{
-	padding:50px 60px;
+	padding:45px 60px 20px 60px;
 	float:left;
 	width:418px;
+	font-size:17px;
 }
 .frmarea .formpart{
-	margin:0px 60px 50px 20px;
+	margin:0px 60px 30px 20px;
 	float:left;
 	width:380px;
-	margin-top:-82px;
+	margin-top:-241px;
+	background:#fff;
 }
-
+/**/
 .icontextarea{
 	width:410px;
 	float:left;
@@ -156,6 +162,9 @@
 }
 .mright60{
 	margin-right:60px;
+}
+.mright0{
+	margin-right:0px!important;
 }
 .pright60{
 	padding-right:60px;
@@ -176,7 +185,10 @@
 .w415{
 	width:415px;
 }
-.linkstyle{
+.w385{
+	width:385px;
+}
+.linkstyle a{
 	text-decoration:underline;
 }
 .linkstyle a:hover{
@@ -207,7 +219,7 @@
 
 
 .infopart h2 img{
-	margin:0px 20px 100px 0px;
+	margin:0px 20px 75px 0px;
 	float:left;
 }
 .formpart{
@@ -218,32 +230,31 @@
 .formpart .toparea{
 	background:#353942;
 	border-radius:7px 7px 0px 0px;
-	padding:29.7px 0px;
-	text-align:center;
-	font-size:16px;
+	padding:19px 30px;
+	font-size:25px;
 	letter-spacing:0.5px;
 	color:#fff;
-	text-transform:uppercase;
+	font-family:'Gadugi'!important;
 }
 .textbox{
 	border:1px solid #c1c1c1;
 	border-radius:5px;
 	padding:18px 20px;
-	margin:5px 30px;
+	margin:5px 33px;
 	width:71%;
-	font:13px 'Open sans';
+	font:13px 'Open sans'!important;
 	color:#696969;
 }
-/*select{
+select{
 	background:url(../images/selectbg.jpg) no-repeat;
 	border:0px;
 	padding:18px 20px;
 	margin:5px 30px;
 	width:84%;
-	font:13px 'Open sans';
+	font:13px 'Open sans'!important;
 	color:#aaa;
 	-webkit-appearance: none;
-}*/
+}
 .w50{
 	width:50%;
 	float:left;
@@ -257,18 +268,21 @@
 	width:900px;
 	margin:0px auto;
 }
+.clientslogo .heading{
+	font-size:20px;
+	font-family:'Gadugi'!important;
+	text-align:center;
+}
 .clientslogo{
 	width:900px;
 	margin:0px auto;
 	padding:20px 0px;
-	font:18px 'Gadugi';
-	color:#d31a2b;
-	text-align:center;
+	/*color:#d31a2b;*/
 }
 .bluearea{
 	background:#353942;
 	padding:50px 60px 100px 60px;
-	font:14px 'open sans';
+	font:14px 'open sans'!important;
 	color:#fff;
 	display:table;
 }
@@ -278,50 +292,17 @@
 
 
 .orange-button{
-	width:82% !important;
+	background:url(../images/submit-button.png) no-repeat;
+    width:82%;
 	margin:10px 30px;
+	height:82px;
 	border:0px;
-	background-color:#f99d1c;
-	font:18px 'Gadugi';
-	text-decoration:none;
-	color:#353942;
-	font-weight:bold;
-	position:relative;
-	padding:15px 9px 13px 11px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-o-border-radius: 5px;
-	border-radius: 5px;
-	-webkit-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
-	-moz-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
-	-o-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
-	box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
 	cursor:pointer;
 }
 
-.orange-button:active {
-	top:3px;
-	-webkit-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
-	-moz-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
-	-o-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
-	box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
-}
-.orange-button:active::before{
-	top:50%;
-	margin-top:-12px;
-	-webkit-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
-	-moz-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
-	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
-	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
-}
-.orange-button:hover,{
+.orange-button:hover{
 	opacity:0.9;
 }
-
-
-
-
-
 
 .orangebutton{
 	position:relative;
@@ -363,7 +344,12 @@
 	-o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 	box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
 }
-
+.yellowbutton{
+	position:relative;
+	right:35px;
+	top:-7px;
+	float:right;
+}
 .grey-button a{
 	background:#5a5a5a;
 	border-radius:7px;
@@ -400,6 +386,10 @@
 	float:left;
 	margin-right:20px;
 }
+.w860{
+	width:860px;
+	margin:0px auto;
+}
 .w410{
 	width:410px;
 }
@@ -414,4 +404,9 @@
 }
 .text{
 	padding-top:8px;
+}
+.arrowtop{
+	position:relative;
+	right:-326px;
+	top:-114px;
 }
