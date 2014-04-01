@@ -5,10 +5,10 @@ Greatlakes::Application.routes.draw do
 
 match '/pgpba',:to=>'screens#index'
 match '/businessanalyticsprogram',:to=>'screens#home'
-match '/Greatlakesanalyticsprogram',:to=>'screens#landing_page'
+# match '/Greatlakesanalyticsprogram',:to=>'screens#landing_page'
 match '/businessanalyticsprogram/group1',:to=>'screens#group1'
 match '/businessanalyticsprogram/thanks',:to=>'screens#thanks'
-match '/Greatlakesanalyticsprogram/thanks',:to=>'screens#thanks1'
+# match '/Greatlakesanalyticsprogram/thanks',:to=>'screens#thanks1'
 match '/businessanalyticsprogram/group2',:to=>'screens#home'
 match '/businessanalyticsprogram/group3',:to=>'screens#home'
 match '/application',:to=>'certified_program_users#new'
