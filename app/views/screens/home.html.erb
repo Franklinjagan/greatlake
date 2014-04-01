@@ -75,15 +75,15 @@ URLParser.prototype = {
 
 var up = new URLParser();
 var urlObj = up.parse(window.location.href);
-var soksid=urlObj.params['soksid'];
+// var soksid=urlObj.params['soksid'];
 var utm_source=urlObj.params['utm_source'];
-var utm_campaign=urlObj.params['utm_campaign'];
-var Soksid = document.getElementById("soksid");
-Soksid.value = urlObj.params['soksid'];
-var Utmsource = document.getElementById("utmsource");
-utmsource.value = urlObj.params['utm_source'];
+// var utm_campaign=urlObj.params['utm_campaign'];
+// var Soksid = document.getElementById("soksid");
+// Soksid.value = urlObj.params['soksid'];
+// var Utmsource = document.getElementById("utmsource");
+// utmsource.value = urlObj.params['utm_source'];
 var Utmcampign = document.getElementById("utmcampaign");
-utmcampaign.value = urlObj.params['utm_campaign'];
+Utmcampign.value = urlObj.params['utm_source'];
 });
 
 </script>
@@ -169,89 +169,409 @@ letter-spacing: 0.5px;
 color: #fff;
 text-transform: uppercase;
 }
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{ 
+  font-family:Gadugi!important;
+  src:url(http://centronicssupport.in/clients/GL/lp/font/gadugi.ttf);
+  
+    font-family:'Gadugi bold'!important;
+  src:url(http://centronicssupport.in/clients/GL/lp/font/gadugib.ttf);
+}
+
+.clear{
+  clear:both;
+}
+
+
+.topbannerarea .headingbig,.topbannerareathanks .headingbig{
+  font:40px 'Gadugi bold'!important;
+  line-height:50px;
+  font-weight:bold!important;
+}
+.smallheading{
+  font:17.9px 'Open Sans', sans-serif!important;
+}
+.red,.red a{
+  color:#033745;
+}
+.blackregular, .blackregular a{
+  color:#363636!important;
+}
+.bold{
+  font-weight:bold!important;
+}
+.lineheight25{
+  line-height:25px!important;
+}
+.lineheight28{
+  line-height:28px!important;
+}
+.mtbottom20{
+  margin-bottom:20px;
+}
+.mtright40{
+  margin-right:40px;
+}
+.mrtop10{
+  margin-top:10px;
+}
+.mrtop14{
+  margin-top:14px;
+}
+.mrtop5{
+  margin-top:5px;
+}
+.mtight0{
+  margin-right:0px!important;
+}
+.font18{
+  font-size:18px;
+}
+.font13{
+  font-size:13px;
+}
+.font14{
+  font-size:14px!important;
+}
+.lineheight18{
+  line-height:18px;
+}
+.ptopbottom50{
+  padding-top:50px!important;
+  padding-bottom:50px!important;
+}
+.pbottom20{
+  margin-bottom:10px!important;
+}
+.pbottom70{
+  margin-bottom:70px!important;
+}
+.aligncenter{
+  text-align:center;
+}
+.floatright{
+  float:right;
+}
+.floatleft{
+  float:left;
+}
+.small1{
+  font-size:14px;
+}
+.smalltext{
+  font-size:12px;
+  color:#9a9c9f;
+}
+.smalltext a{
+  font-size:12px;
+  color:#9a9c9f;
+  text-decoration:underline;
+}
+.smalltext a:hover{
+  font-size:12px;
+  color:#9a9c9f;
+  text-decoration:none;
+}
+
+.wrapper{
+  width:1000px;
+  margin:40px auto;
+  background:#fff;
+  border-radius:10px;
+  padding-bottom:50px;
+}
+.topbannerarea{
+  background:url(../images/bannerbg.jpg) no-repeat right;
+  padding:50px 0px 0px 60px;
+  height:412px;
+}
+.topbannerareathanks{
+  background:url(../images/thanks-banner.jpg) no-repeat;
+  padding:50px 0px 0px 60px;
+  height:409px;
+}
+.yellowpart{
+  background:#fed307;
+  padding:30px 60px;
+  display:table;
+  width:880px;
+}
+.yellowpart .left{
+  float:left;
+  font-size:17px;
+}
+.yellowpart .center{
+  float:left;
+  width:160px;
+  display:table-row;
+}
+
+.frmarea .infopart{
+  padding:45px 60px 20px 60px;
+  float:left;
+  width:418px;
+  font-size:17px;
+}
+/*.frmarea .formpart{
+  margin:0px 60px 30px 20px;
+  float:left;
+  width:380px;
+  margin-top:-241px;
+  background:#fff;
+}*/
+/**/
+.icontextarea{
+  width:410px;
+  float:left;
+  display:table-row;
+}
+.icontextarea img{
+  float:left;
+  margin-right:20px;
+}
+.mright60{
+  margin-right:60px;
+}
+.mright0{
+  margin-right:0px!important;
+}
+.pright60{
+  padding-right:60px;
+}
+.mrleft500{
+  margin-left:500px;
+}
+.missthebusarea{
+  padding:75px 15px 30px 60px;
+  display:table;
+}
+.brochureimage{
+  background:url(../images/missbusimg.jpg) no-repeat;
+  text-align:center;
+  width:435px;
+  height:318px;
+}
+.w415{
+  width:415px;
+}
+.w385{
+  width:385px;
+}
+.linkstyle a{
+  text-decoration:underline;
+}
+.linkstyle a:hover{
+  text-decoration:none;
+}
+.footer{
+  padding:50px 60px 0px 60px;
+  display:table;
+}
+.footer a{
+  color:#363636;
+  text-decoration:none;
+}
+.footer a:hover{
+  color:#363636;
+  text-decoration:underline;
+}
+.devider{
+  width:58px;
+}
+.box{
+  width:275px;
+}
+.footer img.logo{
+  float:left;
+  display:table-row;
+}
+
+
+.infopart h2 img{
+  margin:0px 20px 75px 0px;
+  float:left;
+}
+.formpart{
+  border:1px solid #ababab;
+  border-radius:7px;
+  padding-bottom:30px;
+}
+/*.formpart .toparea{
+  background:#353942;
+  border-radius:7px 7px 0px 0px;
+  padding:19px 30px;
+  font-size:25px;
+  letter-spacing:0.5px;
+  color:#fff;
+  font-family:'Gadugi'!important;
+}*/
+.textbox{
+  border:1px solid #c1c1c1;
+  border-radius:5px;
+  padding:18px 20px;
+  margin:5px 33px;
+  width:71%;
+  font:13px 'Open sans'!important;
+  color:#696969;
+}
+select{
+  background:url(../images/selectbg.jpg) no-repeat;
+  border:0px;
+  padding:18px 20px;
+  margin:5px 30px;
+  width:84%;
+  font:13px 'Open sans'!important;
+  color:#aaa;
+  -webkit-appearance: none;
+}
+.w50{
+  width:50%;
+  float:left;
+}
+.w70{
+  width:70%;
+  margin:0px auto;
+}
+.line{
+  border-bottom:1px solid #d5d5d5;
+  width:900px;
+  margin:0px auto;
+}
+.clientslogo .heading{
+  font-size:20px;
+  font-family:'Gadugi'!important;
+  text-align:center;
+}
+.clientslogo{
+  width:900px;
+  margin:0px auto;
+  padding:20px 0px;
+  /*color:#d31a2b;*/
+}
+.bluearea{
+  background:#353942;
+  padding:50px 60px 100px 60px;
+  font:14px 'Open Sans', sans-serif!important;
+  color:#fff;
+  display:table;
+}
+
+
+.orange-button:hover{
+  opacity:0.9;
+}
+
+.orangebutton{
+  position:relative;
+  top:173px;
+  left:-48px;
+}
+.orangebutton a{
+  /*width:84%;*/
+  margin:10px 30px;
+  border:0px;
+  background-color:#f99d1c;
+  font-size:16px;
+  text-decoration:none;
+  color:#353942;
+  font-weight:bold;
+  padding:15px 25px 13px 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  -moz-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  -o-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  cursor:pointer;
+}
+.orangebutton a:active  {
+  top:3px;
+  -webkit-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+  -moz-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+  -o-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+  box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+}
+.orangebutton a:active::before{
+  top:50%;
+  margin-top:-12px;
+  -webkit-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+  -moz-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+  -o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+  box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+}
+.yellowbutton{
+  position:relative;
+  right:35px;
+  top:-7px;
+  float:right;
+}
+.grey-button a{
+  background:#5a5a5a;
+  border-radius:7px;
+  padding:8px 14px;
+  color:#fff;
+  text-decoration:none;
+}
+.grey-button a:hover{
+  opacity:0.9;
+}
+.newmodulemain{
+  background:url(../images/gaurav-module-bg.jpg) no-repeat;
+  height:300px;
+  width:813px;
+  margin:20px auto 0px auto;
+  padding:30px;
+}
+.newmodule{
+  border:1px solid #ccc;
+  border-radius:5px;
+  padding:30px 20px;
+  display:table;
+}
+.box{
+  width:240px;
+  float:left;
+  padding:0px 40px 0px 40px;
+/*  border-right:1px solid #ccc;
+  margin-top:30px;*/
+  font-size:14px;
+  line-height:24px;
+}
+.box img{
+  float:left;
+  margin-right:20px;
+}
+.w860{
+  width:860px;
+  margin:0px auto;
+}
+.w410{
+  width:410px;
+}
+.w240{
+  width:240px;
+}
+.leftfloat{
+  float:left;
+}
+.rightfloat{
+  float:right;
+}
+.text{
+  padding-top:8px;
+}
+.arrowtop{
+  position:relative;
+  right:-326px;
+  top:-114px;
+}
 </style>  
 
-<!-- <div class="row">
- <div class="container">
 
-  <div class="span12" >
-  <div class="wrap_box">
-
-  <h1 style="text-align:center;color:#ddd;">Your Gateway to a management career in Analytics</h1>
-  <div style="background:url('/assets/top_bg.png');float:left;width:100%;background-size: 100% 100%;background-repeat: no-repeat;box-shadow: 1px 2px 10px 2px #ddd;">
-<table><tr><td style="padding:55px;">
-  <%#= image_tag('gllogo.png',:width=>"360", :height=>"130") %>
-</td>
-<td style="padding:55px;font-size:18px;">
-  <h1>Post Graduate Program in Business Analytics @ Greatlakes Delhi</h1>
-  <b>11-month</b> blended program (classroom + online) designed for <b>working professionals</b>
-</td></tr></table>
-  </div>
-    <div style="background:url('/assets/banner_bg.png');float:left;width:100%;background-size: 100% 100%;background-repeat: no-repeat;width: 104%;height: 365px;margin-left: -18px;box-shadow: 0px 5px 8px 5px #333;margin-bottom: 15px;">
-<table style="width: 100%;">
-   <%#= image_tag('corner_ribbon.png',:style=>"float:left;position: absolute;margin-left: -0.85%;
-margin-top: -.5%;") %>
-
-
-  <tr><td style="text-align: right;">
-      <%#= image_tag('info_banr.png') %>
-</td>
-<td >
-  <div style="margin-top:20px;margin-left: 50px;background:url('/assets/form_bg.png');width:450px;height:332px;">
-    <div id='crmWebToEntityForm' align=center>
-    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>  
-  <form action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads788461000000067005' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' 
-  accept-charset='UTF-8' ><table border=0 cellspacing=0 cellpadding=5 
-  width=250 style='float:right;margin: 100px 0px 0px 0px;'>  <input type='text' 
-  style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/> 
-  <input type='hidden' name='zc_gad' 
-  id='zc_gad' value=''/>  <input type='text' style='display:none;' 
-  name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  
-  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
-  <input type='text' style='display:none;' name='returnURL' value='http://pgpba.greatlakes.edu.in/' /> 
-  <tr><td colspan='2' align='left' 
-style='font-size:22px;font-style:italic;display:none;'><strong>Free instant access</strong></td></tr>
-  <tr><td nowrap style='font-family:sans-serif;font-size:12px;display:none;font-weight:bold' align='right' width='1%' >Last Name &nbsp;&nbsp;:</td><td 
-  width='75%'><input type='text' maxlength='80' name='Last Name' placeholder="Name*" /> 
-  </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='100' name='Email' placeholder="Email*"/> </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'>
-<input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM_Campaign &nbsp;&nbsp;:</td><td width='75%'>
-  <input type='hidden' maxlength='55' name='LEADCF5' id="utmcampaign" /> </td></tr> 
-<tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.fullpath() %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
-  <tr><td  
-  align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
-  <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
-  checkMandatery(){for(i=0;i<mndFileds.length;i++){ var 
-  fieldObj=document.forms['WebToLeads788461000000067005'][mndFileds[i]];if(fieldObj) 
-  {if(((fieldObj.value).replace(/^\s+|\s+$/g, 
-  '')).length==0){alert(fldLangVal[i] +' cannot be empty'); 
-  fieldObj.focus(); return false;}else 
-  if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] 
-  +' cannot be none'); fieldObj.focus(); return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>  
-  </form></div>
-</div>
-</td></tr></table>
-  </div>
-  <h1 style="text-align:center;font-weight: normal;">About the Program</h1>
-  <div style="float:left;width:100%;text-align: center;background-size: 100% 100%;background-repeat: no-repeat;box-shadow: 1px 2px 10px 2px #ddd;">
-          <%#= image_tag('about_pgrogram.png', :style=>"width:100%;") %>
-</div>
-   <div style="float:left;width:97%;background-size: 100% 100%;background-repeat: no-repeat;box-shadow: 1px 2px 10px 2px #ddd;padding: 20px;">
-
-<table cellpadding="5" style="font-size:16px;"><tr><td><h4>CONTACT US</h4></td><td><i class="icon " style="margin-top: 0px;margin-right: 0px;">      <%#= image_tag('tel.png', :width=>"15") %>
-  </i><b>Tel</b>:</td><td> 87506-48238</td>
-<td><i class="icon icon-envelope" style="margin-top: 4px;margin-right: 2px;"></i><b>Email</b>:</td><td> <a href="mailto:pgpba@greatlakes.edu.in" target="_top">pgpba@greatlakes.edu.in</a></td>
-<td><i class="icon " style="margin-top: 0px;margin-right: 2px;">
-<%#= image_tag('mouse.png', :width=>"15") %>
-</i><b>Web</b>:</td><td><a href="/" style="color:#000;">pgpba.greatlakes.edu.in</a></td></tr></table>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div> -->
 
  <div class="wrapper">
   <div class="topbannerarea">
@@ -378,13 +698,13 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
 
   
   
-  <div class="w50 aligncenter">
+  <div class="w50 aligncenter lineheight25">
     <div class="w70"> “My journey in Great Lakes so far has been incredibly informative. Each faculty member is a recongised expert in their respective domain.”
       <p class="smalltext blackregular">– Sudhanshu Pathak <br />
         (SAP Consultant at KPMG, PGPBA student)</p>
     </div>
   </div>
-  <div class="w50 aligncenter">
+  <div class="w50 aligncenter lineheight25">
     <div class="w70"> “The course coverage is quite exhaustive and in depth. The professors are knowledgeable and coach very well. Overall, the program is good and is getting executed well by Great Lakes.”
       <p class="smalltext blackregular">– Lakshmi Prabha <br />
         (Program Manager at HCL, PGPBA student)</p>

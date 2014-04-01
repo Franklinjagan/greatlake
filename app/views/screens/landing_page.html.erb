@@ -1,94 +1,95 @@
 <% provide(:title, 'Build a career in analytics with Great Lakes') %>
 
 <script type="text/javascript">
-// $(document).ready(function()
-// {
-// var URLParser = function (url) {
-//     this.url = url || window.location.href;
-//     this.urlObject = this.parse(); 
-// };
+$(document).ready(function()
+{
+var URLParser = function (url) {
+    this.url = url || window.location.href;
+    this.urlObject = this.parse(); 
+};
 
-// URLParser.prototype = {
-//     constructor : URLParser,
+URLParser.prototype = {
+    constructor : URLParser,
     
-//     parse : function (url) {
-//         var tempArr,
-//             item,
-//             i,
-//             returnObj = {};
-//         this.url = url || this.url;
-//         tempArr = this.url.split("?");
-//         returnObj.baseURL = tempArr[0];
-//         returnObj.params = {};
-//         if (tempArr.length > 1) {
-//             returnObj.queryString = tempArr[1];
-//             tempArr = tempArr[1].split("&");
-//             for (i = 0; i < tempArr.length; i++) {
-//                 item = tempArr[i].split("=");
-//                 returnObj.params[item[0]] = item[1];    
-//             }
-//         } else {
-//             returnObj.queryString = "";
-//         }
+    parse : function (url) {
+        var tempArr,
+            item,
+            i,
+            returnObj = {};
+        this.url = url || this.url;
+        tempArr = this.url.split("?");
+        returnObj.baseURL = tempArr[0];
+        returnObj.params = {};
+        if (tempArr.length > 1) {
+            returnObj.queryString = tempArr[1];
+            tempArr = tempArr[1].split("&");
+            for (i = 0; i < tempArr.length; i++) {
+                item = tempArr[i].split("=");
+                returnObj.params[item[0]] = item[1];    
+            }
+        } else {
+            returnObj.queryString = "";
+        }
         
-//         return returnObj;
-//     },
+        return returnObj;
+    },
     
-//     toString : function () {
-//         var strURL = this.urlObject.baseURL + "?",
-//             paramObj = this.urlObject.params,
-//             prop;
-//         for (prop in paramObj) {
-//             if (paramObj.hasOwnProperty(prop)) {
-//                 strURL += prop + "=" + paramObj[prop] + "&";
-//             }
-//          }
-//         return strURL.substr(0, strURL.length - 1);
-//     },
+    toString : function () {
+        var strURL = this.urlObject.baseURL + "?",
+            paramObj = this.urlObject.params,
+            prop;
+        for (prop in paramObj) {
+            if (paramObj.hasOwnProperty(prop)) {
+                strURL += prop + "=" + paramObj[prop] + "&";
+            }
+         }
+        return strURL.substr(0, strURL.length - 1);
+    },
     
-//     removeParams : function (removeArray) {
-//         var paramObj = this.urlObject.params,
-//             key,
-//             i;
-//         if (removeArray instanceof Array) {
-//             for (i = 0; i < removeArray.length; i++) {
-//                 key = removeArray[i];
-//                 if (paramObj.hasOwnProperty(key)) {
-//                     delete paramObj[key];
-//                 }
-//             }
-//         }
-//     },
+    removeParams : function (removeArray) {
+        var paramObj = this.urlObject.params,
+            key,
+            i;
+        if (removeArray instanceof Array) {
+            for (i = 0; i < removeArray.length; i++) {
+                key = removeArray[i];
+                if (paramObj.hasOwnProperty(key)) {
+                    delete paramObj[key];
+                }
+            }
+        }
+    },
     
-//     addParams : function (paramObj) {
-//         var params = this.urlObject.params,
-//             key;
-//         if (typeof paramObj === "object") {
-//             for (key in paramObj) {
-//                 if (paramObj.hasOwnProperty(key)) {
-//                     params[key] = paramObj[key];
-//                 }
-//             }
-//         }
-//     }
-// };
+    addParams : function (paramObj) {
+        var params = this.urlObject.params,
+            key;
+        if (typeof paramObj === "object") {
+            for (key in paramObj) {
+                if (paramObj.hasOwnProperty(key)) {
+                    params[key] = paramObj[key];
+                }
+            }
+        }
+    }
+};
 
-// var up = new URLParser();
-// var urlObj = up.parse(window.location.href);
+var up = new URLParser();
+var urlObj = up.parse(window.location.href);
 // var soksid=urlObj.params['soksid'];
-// var utm_source=urlObj.params['utm_source'];
+var utm_source=urlObj.params['utm_source'];
 // var utm_campaign=urlObj.params['utm_campaign'];
 // var Soksid = document.getElementById("soksid");
 // Soksid.value = urlObj.params['soksid'];
 // var Utmsource = document.getElementById("utmsource");
 // utmsource.value = urlObj.params['utm_source'];
-// var Utmcampign = document.getElementById("utmcampaign");
-// utmcampaign.value = urlObj.params['utm_campaign'];
-// });
+var Utmcampign = document.getElementById("utmcampaign");
+Utmcampign.value = urlObj.params['utm_source'];
+});
 
 </script>
 
 <style type="text/css"> 
+
 .navbar{display:none;}
 .textbox{border:1px solid #c1c1c1 !important;
   border-radius:5px !important;
@@ -105,31 +106,6 @@
   line-height:22px !important;
   font-weight:normal;
 }
-h2{
-  font-size:24px !important;
-  font-family:Gadugi!important;
-  color:#d31a2b;
-  margin:10px 0px 0px 0px;
-  padding:0px;
-}
-h3{
-  font-size:30px !important;
-  font-family:Gadugi bold !important;
-  color:#fff;
-  margin:0px 0px 30px 0px;
-  padding:0px;
-  text-align:center;
-}
-h5 {
-font: 30px 'Gadugi bold'!important;
-color: #ffd300;
-}
-h4{
-  font-size:40px!important;
-  color:#353942;
-  margin:0px 0px 30px 0px;
-  padding:0px;
-}
 form {
 margin: 0 0 0px;
 }
@@ -145,7 +121,7 @@ background: #fff;
 .arrowtop {
 position: relative;
 right: -326px;
-top: -114px;
+top: -90px;
 }
 .yellowpart {
 background: #fed307;
@@ -221,92 +197,472 @@ color: #aaa;
   padding:50px 0px 0px 60px;
   height:412px;
 }
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{ 
+  font-family:Gadugi!important;
+  src:url(http://centronicssupport.in/clients/GL/lp/font/gadugi.ttf);
+  
+    font-family:'Gadugi bold'!important;
+  src:url(http://centronicssupport.in/clients/GL/lp/font/gadugib.ttf);
+}
+
+.clear{
+  clear:both;
+}
+
+body{
+  margin:0px;
+  background:#5a5a5a;
+  font:15px 'Open Sans', sans-serif!important;
+  color:#363636;
+  line-height:24px;
+  font-weight:normal;
+}
+
+
+.topbannerarea .headingbig,.topbannerareathanks .headingbig{
+  font:42px 'Gadugi bold'!important;
+  line-height:50px;
+  font-weight:bold!important;
+}
+.smallheading{
+  font:17.9px 'Open Sans', sans-serif!important;
+}
+.red,.red a{
+  color:#033745;
+}
+.blackregular, .blackregular a{
+  color:#363636!important;
+}
+.bold{
+  font-weight:bold!important;
+}
+.lineheight25{
+  line-height:25px!important;
+}
+.lineheight28{
+  line-height:28px!important;
+}
+.mtbottom20{
+  margin-bottom:20px;
+}
+.mtright40{
+  margin-right:40px;
+}
+.mrtop10{
+  margin-top:10px;
+}
+.mrtop14{
+  margin-top:14px;
+}
+.mrtop5{
+  margin-top:5px;
+}
+.mtight0{
+  margin-right:0px!important;
+}
+.font18{
+  font-size:18px;
+}
+.font13{
+  font-size:13px!important;
+}
+.font14{
+  font-size:14px!important;
+}
+.lineheight18{
+  line-height:18px;
+}
+.ptopbottom50{
+  padding-top:50px!important;
+  padding-bottom:50px!important;
+}
+.pbottom20{
+  margin-bottom:10px!important;
+}
+.pbottom70{
+  margin-bottom:70px!important;
+}
+.aligncenter{
+  text-align:center;
+}
+.floatright{
+  float:right;
+}
+.floatleft{
+  float:left;
+}
+.small1{
+  font-size:14px;
+}
+.smalltext{
+  font-size:12px;
+  color:#9a9c9f;
+}
+.smalltext a{
+  font-size:12px;
+  color:#9a9c9f;
+  text-decoration:underline;
+}
+.smalltext a:hover{
+  font-size:12px;
+  color:#9a9c9f;
+  text-decoration:none;
+}
+
+.wrapper{
+  width:1000px;
+  margin:40px auto 20px auto;
+  background:#fff;
+  border-radius:10px;
+  padding-bottom:30px;
+}
+.topbannerarea{
+  background:url(../images/bannerbg.jpg) no-repeat right;
+  padding:50px 0px 0px 60px;
+  height:411px;
+}
+.topbannerareathanks{
+  background:url(../images/thanks-banner.jpg) no-repeat;
+  padding:50px 0px 0px 60px;
+  height:409px;
+}
+.yellowpart{
+  background:#fed307;
+  padding:30px 60px;
+  display:table;
+  width:880px;
+}
+.yellowpart .left{
+  float:left;
+  font-size:17px;
+}
+.yellowpart .center{
+  float:left;
+  width:160px;
+  display:table-row;
+}
+
+.frmarea .infopart{
+  padding:45px 60px 0px 60px;
+  float:left;
+  width:418px;
+  font-size:17px;
+}
+.frmarea .formpart{
+  margin:0px 60px 30px 20px;
+  float:left;
+  width:380px;
+  margin-top:-241px;
+  background:#fff;
+}
+h2{
+  font-size:24px!important;
+  /*font-family:Gadugi!important;*/
+  color:#d31a2b;
+  margin:10px 0px 0px 0px;
+  padding:0px;
+}
+h3{
+  font-size:30px!important;
+  font-family:Gadugi bold !important;
+  color:#fff;
+  margin:0px 0px 30px 0px;
+  padding:0px;
+  text-align:center;
+}
+h4{
+  font-size:40px!important;
+  /*font-family:Gadugi!important;*/
+  color:#353942;
+  margin:0px 0px 30px 0px;
+  padding:0px;
+}
+h5{
+  font:30px 'Gadugi bold'!important;
+  /*font-family:Gadugi!important;*/
+  color:#ffd300;
+  margin:0px 0px 30px 0px;
+  padding:0px;
+}
+.icontextarea{
+  width:410px;
+  float:left;
+  display:table-row;
+}
+.icontextarea img{
+  float:left;
+  margin-right:20px;
+}
+.mright60{
+  margin-right:60px;
+}
+.mright0{
+  margin-right:0px!important;
+}
+.pright60{
+  padding-right:60px;
+}
+.mrleft500{
+  margin-left:500px;
+}
+.missthebusarea{
+  padding:75px 15px 30px 60px;
+  display:table;
+}
+.brochureimage{
+  background:url(../images/missbusimg.jpg) no-repeat;
+  text-align:center;
+  width:435px;
+  height:318px;
+}
+.w415{
+  width:415px;
+}
+.w385{
+  width:385px;
+}
+.linkstyle a{
+  text-decoration:underline;
+}
+.linkstyle a:hover{
+  text-decoration:none;
+}
+.footer{
+  padding:50px 60px 0px 60px;
+  display:table;
+}
+.footer a{
+  color:#363636;
+  text-decoration:none;
+}
+.footer a:hover{
+  color:#363636;
+  text-decoration:underline;
+}
+.devider{
+  width:58px;
+}
+.box{
+  width:275px;
+}
+.footer img.logo{
+  float:left;
+  display:table-row;
+}
+
+
+.infopart h2 img{
+  margin:0px 20px 75px 0px;
+  float:left;
+}
+.formpart{
+  border:1px solid #ababab;
+  border-radius:7px;
+  padding-bottom:30px;
+}
+.formpart .toparea{
+  background:#353942;
+  border-radius:7px 7px 0px 0px;
+  padding:19px 30px;
+  font-size:25px;
+  letter-spacing:0.5px;
+  color:#fff;
+  font-family:'Gadugi'!important;
+}
+.textbox{
+  border:1px solid #c1c1c1;
+  border-radius:5px;
+  padding:18px 20px;
+  margin:5px 33px;
+  width:71%;
+  font:13px 'Open sans'!important;
+  color:#696969;
+}
+select{
+  background:url(../images/selectbg.jpg) no-repeat;
+  border:0px;
+  padding:18px 20px;
+  margin:5px 30px;
+  width:84%;
+  font:13px 'Open sans'!important;
+  color:#aaa;
+  -webkit-appearance: none;
+}
+.w50{
+  width:50%;
+  float:left;
+}
+.w70{
+  width:70%;
+  margin:0px auto;
+}
+.line{
+  border-bottom:1px solid #d5d5d5;
+  width:900px;
+  margin:0px auto;
+}
+.clientslogo .heading{
+  font-size:20px;
+  font-family:'Gadugi'!important;
+  text-align:center;
+}
+.clientslogo{
+  width:900px;
+  margin:0px auto;
+  padding:20px 0px;
+  /*color:#d31a2b;*/
+}
+.bluearea{
+  background:#353942;
+  padding:50px 60px 100px 60px;
+  font:14px 'Open Sans', sans-serif!important;
+  color:#fff;
+  display:table;
+}
+
+
+
+
+
+.orange-button{
+  background:url(../images/submit-button.png) no-repeat;
+    width:82%;
+  margin:10px 30px;
+  height:82px;
+  border:0px;
+  cursor:pointer;
+}
+
+.orange-button:hover{
+  opacity:0.9;
+}
+
+.orangebutton{
+  position:relative;
+  top:173px;
+  left:-48px;
+}
+.orangebutton a{
+  /*width:84%;*/
+  margin:10px 30px;
+  border:0px;
+  background-color:#f99d1c;
+  font-size:16px;
+  text-decoration:none;
+  color:#353942;
+  font-weight:bold;
+  padding:15px 25px 13px 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  -moz-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  -o-box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  box-shadow: inset 0px 0px 0px #84101b, 0px 3px 0px 0px #84101b;
+  cursor:pointer;
+}
+.orangebutton a:active  {
+  top:3px;
+  -webkit-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+  -moz-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+  -o-box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+  box-shadow: inset 0px 1px 0px #ce8218, 0px 1px 0px 0px #ce8218;
+}
+.orangebutton a:active::before{
+  top:50%;
+  margin-top:-12px;
+  -webkit-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+  -moz-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+  -o-box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+  box-shadow: inset 0px 1px 0px #60c9f0, 0px 3px 0px #0e3871, 0px 6px 3px #1a80a6;
+}
+.yellowbutton{
+  position:relative;
+  right:35px;
+  top:-7px;
+  float:right;
+}
+.grey-button a{
+  background:#5a5a5a;
+  border-radius:7px;
+  padding:8px 14px;
+  color:#fff;
+  text-decoration:none;
+}
+.grey-button a:hover{
+  opacity:0.9;
+}
+.newmodulemain{
+  background:url(../images/gaurav-module-bg.jpg) no-repeat;
+  height:300px;
+  width:813px;
+  margin:20px auto 0px auto;
+  padding:30px;
+}
+.newmodule{
+  border:1px solid #ccc;
+  border-radius:5px;
+  padding:30px 20px;
+  display:table;
+}
+.box{
+  width:265px;
+  float:left;
+  padding:0px 33px 0px 33px;
+/*  border-right:1px solid #ccc;
+  margin-top:30px;*/
+  font-size:14px;
+  line-height:24px;
+}
+.box img{
+  float:left;
+  margin-right:20px;
+}
+.w860{
+  width:860px;
+  margin:0px auto;
+}
+.w410{
+  width:410px;
+}
+.w240{
+  width:240px;
+}
+.leftfloat{
+  float:left;
+}
+.rightfloat{
+  float:right;
+}
+.text{
+  padding-top:8px;
+}
+.arrowtop{
+  position:relative;
+  right:-326px;
+  top:-90px;
+}
+.policyurl a{
+  color:#b4b4b4;
+  text-decoration:underline;
+  font-size:12px;
+  text-transform:uppercase;
+}
+.policyurl a:hover{
+  color:#b4b4b4;
+  text-decoration:none;
+  font-size:12px;
+  text-transform:uppercase;
+}
 </style>  
 
-<!-- <div class="row">
- <div class="container">
-
-  <div class="span12" >
-  <div class="wrap_box">
-
-  <h1 style="text-align:center;color:#ddd;">Your Gateway to a management career in Analytics</h1>
-  <div style="background:url('/assets/top_bg.png');float:left;width:100%;background-size: 100% 100%;background-repeat: no-repeat;box-shadow: 1px 2px 10px 2px #ddd;">
-<table><tr><td style="padding:55px;">
-  <%#= image_tag('gllogo.png',:width=>"360", :height=>"130") %>
-</td>
-<td style="padding:55px;font-size:18px;">
-  <h1>Post Graduate Program in Business Analytics @ Greatlakes Delhi</h1>
-  <b>11-month</b> blended program (classroom + online) designed for <b>working professionals</b>
-</td></tr></table>
-  </div>
-    <div style="background:url('/assets/banner_bg.png');float:left;width:100%;background-size: 100% 100%;background-repeat: no-repeat;width: 104%;height: 365px;margin-left: -18px;box-shadow: 0px 5px 8px 5px #333;margin-bottom: 15px;">
-<table style="width: 100%;">
-   <%#= image_tag('corner_ribbon.png',:style=>"float:left;position: absolute;margin-left: -0.85%;
-margin-top: -.5%;") %>
-
-
-  <tr><td style="text-align: right;">
-      <%#= image_tag('info_banr.png') %>
-</td>
-<td >
-  <div style="margin-top:20px;margin-left: 50px;background:url('/assets/form_bg.png');width:450px;height:332px;">
-    <div id='crmWebToEntityForm' align=center>
-    <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>  
-  <form action='https://crm.zoho.com/crm/WebToLeadForm' name='WebToLeads788461000000067005' method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' 
-  accept-charset='UTF-8' ><table border=0 cellspacing=0 cellpadding=5 
-  width=250 style='float:right;margin: 100px 0px 0px 0px;'>  <input type='text' 
-  style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/> 
-  <input type='hidden' name='zc_gad' 
-  id='zc_gad' value=''/>  <input type='text' style='display:none;' 
-  name='xmIwtLD' value='mJKTOQCzg8feKQxKK0wA4HYDTxR5kYBU'/>  
-  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/> 
-  <input type='text' style='display:none;' name='returnURL' value='http://pgpba.greatlakes.edu.in/' /> 
-  <tr><td colspan='2' align='left' 
-style='font-size:22px;font-style:italic;display:none;'><strong>Free instant access</strong></td></tr>
-  <tr><td nowrap style='font-family:sans-serif;font-size:12px;display:none;font-weight:bold' align='right' width='1%' >Last Name &nbsp;&nbsp;:</td><td 
-  width='75%'><input type='text' maxlength='80' name='Last Name' placeholder="Name*" /> 
-  </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='100' name='Email' placeholder="Email*"/> </td></tr><tr><td width='75%'><input 
-  type='text' maxlength='30' name='Phone' placeholder="Phone*" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM Source &nbsp;&nbsp;</td><td width='75%'><input type='hidden' maxlength='55' id="utmsource" name='LEADCF1' /> </td></tr><tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>SOKSID &nbsp;&nbsp;:</td><td width='75%'>
-<input type='hidden' maxlength='55' name='LEADCF3' id="soksid" /> </td></tr>
-<tr><td nowrap style='font-family:sans-serif;font-size:12px;font-weight:bold;display:none;' align='right' width='25%'>UTM_Campaign &nbsp;&nbsp;:</td><td width='75%'>
-  <input type='hidden' maxlength='55' name='LEADCF5' id="utmcampaign" /> </td></tr> 
-<tr><td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;display:none;'>Naukri Group </td><td style='width:250px;' ><input type='hidden' style='width:250px;' value=" <%= request.fullpath() %>"  maxlength='56' name='LEADCF4' /></div> </td></tr><tr>
-  <tr><td  
-  align=center> <input type='submit' name='save' value="Get It Now " onclick="try{ _sokrati_registration(); }catch(err){}" style="background: #2a478d;font-size: 20px;color: #fff;border: none;">  </td></tr></table>
-  <script> var mndFileds=new Array('Last Name');var fldLangVal=new Array('Last Name');function 
-  checkMandatery(){for(i=0;i<mndFileds.length;i++){ var 
-  fieldObj=document.forms['WebToLeads788461000000067005'][mndFileds[i]];if(fieldObj) 
-  {if(((fieldObj.value).replace(/^\s+|\s+$/g, 
-  '')).length==0){alert(fldLangVal[i] +' cannot be empty'); 
-  fieldObj.focus(); return false;}else 
-  if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] 
-  +' cannot be none'); fieldObj.focus(); return false;}}else { window.open("/download_pdf_pgpba");}}}}</script>  
-  </form></div>
-</div>
-</td></tr></table>
-  </div>
-  <h1 style="text-align:center;font-weight: normal;">About the Program</h1>
-  <div style="float:left;width:100%;text-align: center;background-size: 100% 100%;background-repeat: no-repeat;box-shadow: 1px 2px 10px 2px #ddd;">
-          <%#= image_tag('about_pgrogram.png', :style=>"width:100%;") %>
-</div>
-   <div style="float:left;width:97%;background-size: 100% 100%;background-repeat: no-repeat;box-shadow: 1px 2px 10px 2px #ddd;padding: 20px;">
-
-<table cellpadding="5" style="font-size:16px;"><tr><td><h4>CONTACT US</h4></td><td><i class="icon " style="margin-top: 0px;margin-right: 0px;">      <%#= image_tag('tel.png', :width=>"15") %>
-  </i><b>Tel</b>:</td><td> 87506-48238</td>
-<td><i class="icon icon-envelope" style="margin-top: 4px;margin-right: 2px;"></i><b>Email</b>:</td><td> <a href="mailto:pgpba@greatlakes.edu.in" target="_top">pgpba@greatlakes.edu.in</a></td>
-<td><i class="icon " style="margin-top: 0px;margin-right: 2px;">
-<%#= image_tag('mouse.png', :width=>"15") %>
-</i><b>Web</b>:</td><td><a href="/" style="color:#000;">pgpba.greatlakes.edu.in</a></td></tr></table>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div> -->
 <div class="wrapper">
   <div class="topbannerarea">
-    <div class="mtbottom20"><img src="images/logo.jpg" width="214" height="80" alt="great lakes logo" /></div>
+    <div class="mtbottom20"><img src="../images/logo.jpg" width="214" height="80" alt="great lakes logo" /></div>
     <br />
     <div class="headingbig bold mtbottom20">Transition your <br />
       career to Analytics </div>
@@ -322,15 +678,16 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
   </div>
   <div class="clear"></div>
   <div class="frmarea">
-  <div class="infopart"> <img src="images/professionals-img.jpg" alt="working professionals " width="402" height="125" />
+  <div class="infopart  lineheight28"> <img src="../images/professionals-img.jpg" alt="working professionals " width="402" height="125" />
     <p>This program is <strong>designed for working professionals</strong> who wish to embark on managerial careers in the analytics sector. <span class="linkstyle blackregular"><a href="#frm">Register for this program now!</a></span></p>
-    <div class="arrowtop"><img src="images/arrow-top-02.png" width="154" height="99" /></div>
+    <div class="arrowtop"><img src="../images/arrow-top-02.png" width="154" height="99" /></div>
     <div class="clear"></div>
   </div>
   <a name="frm"></a>
   <div class="formpart">
   <div class="toparea" style="line-height: 28px;">Join The League of Expert<br />
     Data Scientists. Apply Now!</div>
+    <div align="center"><img src="../../images/arrowfrm.jpg" width="30" height="14" style="margin-top: -7px;"></div>
   <br/>
   <div align="left" style="padding:0px 30px;font-size:13px;">Admissions open for Chennai & Gurgaon campus.<br />
     Last date for submission of application - April 10th</div>
@@ -381,15 +738,15 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
 </div>
 <div class="clear"></div>
 <div class="testimonials">
-  <p><img src="images/testimonial-topimg.jpg" width="1000" height="154" alt="testimonials" /></p>
+  <p><img src="../images/testimonial-topimg.jpg" width="1000" height="154" alt="testimonials" /></p>
   <div class="clear"></div>
-  <div class="w50 aligncenter">
+  <div class="w50 aligncenter lineheight25">
     <div class="w70"> “My journey in Great Lakes so far has been incredibly informative. Each faculty member is a recognised expert in their respective domain.”
       <p class="smalltext blackregular">– Sudhanshu Pathak <br />
         (SAP Consultant at KPMG, PGPBA student)</p>
     </div>
   </div>
-  <div class="w50 aligncenter">
+  <div class="w50 aligncenter lineheight25">
     <div class="w70"> “The course coverage is quite exhaustive and in depth. The professors are knowledgeable and coach very well. Overall, the program is good and is getting executed well by Great Lakes.”
       <p class="smalltext blackregular">– Lakshmi Prabha <br />
         (Program Manager at HCL, PGPBA student)</p>
@@ -409,7 +766,7 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
     <div class="w385 font14 mright0">
       <p>Industry professionals from the following organizations train, mentor and evaluate candidates in Great Lakes' PGP-BA:<br />
       </p>
-      <p><img src="images/logos.jpg" alt="organizations " width="385" height="149" /></p>
+      <p><img src="../images/logos.jpg" alt="organizations " width="385" height="149" /></p>
     </div>
   </div>
   <div class="w50 pbottom70 lineheight28">
@@ -420,23 +777,41 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
   </div>
 </div>
 <div class="clear"></div>
-<div class="bluearea">
+<!-- <div class="bluearea">
   <h3>4 Reasons Why You Should Enrol To This Course</h3>
-  <div class="icontextarea mright60"><img src="images/icon-left-01.jpg" width="45" height="45" />Industry relevant curriculum that weaves participants with applications for decision support.</div>
-  <div class="icontextarea"><span class="icontextarea mright60"><img src="images/icon-right-01.jpg" width="45" height="45" />Virtual lab wherein the candidates get hands-on exposure and build skills in tools and technologies such as SAS, Tableau and R.<br />
+  <div class="icontextarea mright60"><img src="../images/icon-left-01.jpg" width="45" height="45" />Industry relevant curriculum that weaves participants with applications for decision support.</div>
+  <div class="icontextarea"><span class="icontextarea mright60"><img src="../images/icon-right-01.jpg" width="45" height="45" />Virtual lab wherein the candidates get hands-on exposure and build skills in tools and technologies such as SAS, Tableau and R.<br />
     </span></div>
   <div class="clear"></div>
   <br/>
   <br/>
-  <div class="icontextarea mright60"><img src="images/icon-left-02.jpg" width="45" height="45" />Blended learning environment (Classroom + Online) that causes minimal disruption to work schedule.</div>
-  <div class="icontextarea"><span class="icontextarea mright60"><img src="images/icon-left-03.jpg" width="45" height="45" />The faculty pool consists of leading academicians in the area of business analytics along with experienced industry practitioners.</span></div>
+  <div class="icontextarea mright60"><img src="../images/icon-left-02.jpg" width="45" height="45" />Blended learning environment (Classroom + Online) that causes minimal disruption to work schedule.</div>
+  <div class="icontextarea"><span class="icontextarea mright60"><img src="../images/icon-left-03.jpg" width="45" height="45" />The faculty pool consists of leading academicians in the area of business analytics along with experienced industry practitioners.</span></div>
+</div> -->
+<div class="bluearea">
+  <h3>5 Reasons Why You Should Enrol To PGP-BA Course</h3>
+  <div class="icontextarea mright60"><img src="../images/icon-left-01.jpg" width="45" height="45" />Industry relevant curriculum that weaves participants with applications for decision support.</div>
+  <div class="icontextarea"><span class="icontextarea mright60"><img src="../images/icon-right-01.jpg" width="45" height="45" />Virtual lab wherein the candidates get hands-on exposure and build skills in tools and technologies such as SAS, Tableau and R.<br />
+    </span></div>
+  <div class="clear"></div>
+  <br/>
+  <br/>
+  <div class="icontextarea mright60"><img src="../images/icon-left-02.jpg" width="45" height="45" />Blended learning environment (Classroom + Online) that causes minimal disruption to work schedule.</div>
+  <div class="icontextarea"><span class="icontextarea mright60"><img src="../images/icon-right-02.jpg" width="45" height="45" />The program is designed, delivered and endorsed by leading analytical, technology and consulting organizations.<br />
+    </span></div>
+  <div class="clear"></div>
+  <br/>
+  <br/>
+  <div class="icontextarea mright60"><img src="../images/icon-left-03.jpg" width="45" height="45" />The faculty pool consists of leading academicians in the area of business analytics along with experienced industry practitioners.</div>
+ <!--  <div class="icontextarea"><span class="icontextarea" style="padding-left:50px;"><img src="../images/more-icon.jpg" width="366" height="61" /><br />
+    </span></div> -->
 </div>
 <div class="clear"></div>
 <div class="clientslogo">
   <p class="heading"><strong><br />
     <br />
     Candidates of PGP-BA program come from some of the leading organizations like: </strong></p>
-  <p align="center"><img src="images/clientslogo.jpg" width="763" height="71" alt="clients" /></p>
+  <p align="center"><img src="../images/clientslogo.jpg" width="763" height="71" alt="clients" /></p>
   <br/>
   <div class="w50 pbottom70 lineheight25">
     <div class="w70" style="width:365px;">
@@ -447,13 +822,13 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
   <div class="w50 pbottom70 lineheight25">
     <div class="w70" style="width:365px;">
       <p> A combination of business management and analytical training can propel you to managerial roles in analytics industry.</p>
-      <p>Tap the opportunity today.<span class="yellowbutton"><a href="#frm"><img src="images/applybutton.png" alt="apply now!" width="138" height="46" /></a></span></p>
+      <p>Tap the opportunity today.<span class="yellowbutton"><a href="#frm"><img src="../images/applybutton.png" alt="apply now!" width="138" height="46" /></a></span></p>
     </div>
   </div>
 </div>
 <div class="clear"></div>
 <div class="line"></div>
-<div class="missthebusarea">
+<div class="missthebusarea lineheight25">
   <div class="w415 floatleft mright60">
     <h4 class="bold">Don’t Miss The Bus!</h4>
     <p class="red">Analytics is the next big global opportunity and is witnessing an acute shortage of skilled talent. But you can fill the void. </p>
@@ -473,23 +848,21 @@ style='font-size:22px;font-style:italic;display:none;'><strong>Free instant acce
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
+      
     </p>
     <div class="font13 mright60 pright60">Get the e-copy of course brochure <br />
       by filling up this <span class="linkstyle blackregular"><a href="#frm">small form</a></span>!</div>
   </div>
 </div>
 <div class="line mtbottom20">&nbsp;</div>
-<div class="footer"> <img src="images/logo-footer.jpg" width="209" height="76" class="logo" /> 
+<div class="footer"> <img src="../images/logo-footer.jpg" width="209" height="76" class="logo" /> 
   <!--  <div class="devider floatleft">&nbsp;</div>-->
   <div class="box floatleft">Great Lakes, one of India's premier business schools, has been ranked within the top ten in the country by Outlook, Business Today, Careers 360 and CNBC-TV18.<br />
   </div>
   <!--<div class="devider floatleft">&nbsp;</div>-->
   <div class="box floatleft"> For more information:<br/>
-    <div class="icontextarea lineheight25 mrtop14"><img src="images/footer-icons-call.jpg" width="23" height="25" />Call 08750648238</div>
-    <div class="icontextarea lineheight25 mrtop5"><img src="images/footer-icons-mail.jpg" width="23" height="25" />Email <a href="mailto:pgpba@greatlakes.edu.in">pgpba@greatlakes.edu.in</a></div>
+    <div class="icontextarea lineheight25 mrtop14"><img src="../images/footer-icons-call.jpg" width="23" height="25" />Call 08750648238</div>
+    <div class="icontextarea lineheight25 mrtop5"><img src="../images/footer-icons-mail.jpg" width="23" height="25" />Email <a href="mailto:pgpba@greatlakes.edu.in">pgpba@greatlakes.edu.in</a></div>
     <div class="icontextarea lineheight25 mrtop5"> <a href="#privacy" class="hover" role="button" data-toggle="modal" style="padding-left:44px;">Privacy Policy</a> </div>
     <br />
   </div>
