@@ -691,14 +691,14 @@ select{
   <br/>
   <div align="left" style="padding:0px 30px;font-size:13px;">Admissions open for Chennai & Gurgaon campus.<br />
     Last date for submission of application - April 10th</div>
-  <div id='crmWebToEntityForm' align='center'>
+   <div id='crmWebToEntityForm' align='center'>
   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset = UTF-8'>
   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads788461000000674009 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatery()' accept-charset='UTF-8'>
     <input type='text' style='display:none;' name='xnQsjsdp' value='SxGdQuLItuBthYo@kRl79w$$'/>
     <input type='hidden' name='zc_gad' id='zc_gad' value=''/>
     <input type='text' style='display:none;' name='xmIwtLD' value='mJKTOQCzg8ei6kiffTThYYIjjEL9B-pv'/>
     <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/>
-    <input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;pgpba.greatlakes.edu.in&#x2f;Greatlakesanalyticsprogram&#x2f;thanks' />
+    <input type='text' style='display:none;' name='returnURL' value='http&#x3a;&#x2f;&#x2f;pgpba.greatlakes.edu.in&#x2f;Greatlakesanalyticsprogram&#x2f;thanks.php' />
     <br>
 
 <table border=0 cellspacing=0 cellpadding='0' width="100%" >
@@ -720,17 +720,25 @@ select{
   </tr>
   <tr> 
     <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Email address<span style='color:red;'>*</span></td>-->
-    <td><select style='width:310px;border:0px;color:#adadad;' name='Preferred campus'>
+    <td><select style='width:310px;border:0px;color:#adadad;'  name='LEADCF6' class="textbox">
             <option value=''>Select preferred campus</option>
             <option value='Chennai'>Chennai</option>
             <option value='Gurgaon'>Gurgaon</option>
           </select></td>
   </tr>
+  
+  <tr style='display:none;' >
+       <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;' width='50%'>UTM_Campaign </td>-->
+      <td><input type='text' maxlength='96' name='LEADCF5' value='GoogleAdwords'>
+        </input></td>
+    </tr>
+  
+  
   <tr>
     <td colspan='2' align='center' style='padding-top: 15px;'><input type='submit' value='' class="orange-button" /></td>
   </tr>
 </table>
-<script> var mndFileds=new Array('Last Name','Email','Phone','Preferred campus');var fldLangVal=new Array('Full name','Email','Mobile','Preferred campus');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads788461000000674009'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}}}}</script>
+<script> var mndFileds=new Array('Last Name','Email','Phone');var fldLangVal=new Array('Full name','Email','Mobile');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads788461000000674009'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}}}}</script>
 </form>
 </div>
 <div class="smalltext" style="width:320px;margin:0px auto;text-align:right">We respect your  <a href="#privacy" class="hover" role="button" data-toggle="modal"> privacy</a>. </div>

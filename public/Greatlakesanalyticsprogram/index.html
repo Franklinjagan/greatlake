@@ -17,6 +17,95 @@
 	});
 });
 </script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+var URLParser = function (url) {
+    this.url = url || window.location.href;
+    this.urlObject = this.parse(); 
+};
+
+URLParser.prototype = {
+    constructor : URLParser,
+    
+    parse : function (url) {
+        var tempArr,
+            item,
+            i,
+            returnObj = {};
+        this.url = url || this.url;
+        tempArr = this.url.split("?");
+        returnObj.baseURL = tempArr[0];
+        returnObj.params = {};
+        if (tempArr.length > 1) {
+            returnObj.queryString = tempArr[1];
+            tempArr = tempArr[1].split("&");
+            for (i = 0; i < tempArr.length; i++) {
+                item = tempArr[i].split("=");
+                returnObj.params[item[0]] = item[1];    
+            }
+        } else {
+            returnObj.queryString = "";
+        }
+        
+        return returnObj;
+    },
+    
+    toString : function () {
+        var strURL = this.urlObject.baseURL + "?",
+            paramObj = this.urlObject.params,
+            prop;
+        for (prop in paramObj) {
+            if (paramObj.hasOwnProperty(prop)) {
+                strURL += prop + "=" + paramObj[prop] + "&";
+            }
+         }
+        return strURL.substr(0, strURL.length - 1);
+    },
+    
+    removeParams : function (removeArray) {
+        var paramObj = this.urlObject.params,
+            key,
+            i;
+        if (removeArray instanceof Array) {
+            for (i = 0; i < removeArray.length; i++) {
+                key = removeArray[i];
+                if (paramObj.hasOwnProperty(key)) {
+                    delete paramObj[key];
+                }
+            }
+        }
+    },
+    
+    addParams : function (paramObj) {
+        var params = this.urlObject.params,
+            key;
+        if (typeof paramObj === "object") {
+            for (key in paramObj) {
+                if (paramObj.hasOwnProperty(key)) {
+                    params[key] = paramObj[key];
+                }
+            }
+        }
+    }
+};
+
+var up = new URLParser();
+var urlObj = up.parse(window.location.href);
+// var soksid=urlObj.params['soksid'];
+var utm_source=urlObj.params['utm_source'];
+// var utm_campaign=urlObj.params['utm_campaign'];
+// var Soksid = document.getElementById("soksid");
+// Soksid.value = urlObj.params['soksid'];
+// var Utmsource = document.getElementById("utmsource");
+// utmsource.value = urlObj.params['utm_source'];
+var Utmcampign = document.getElementById("utmcampaign");
+Utmcampign.value = urlObj.params['utm_source'];
+});
+
+</script>
+
 </head>
 
 <body>
@@ -34,7 +123,7 @@
   <div class="clear"></div>
   <div class="yellowpart">
     <div class="left lineheight28">Great Lakes PGP-BA program is <strong>&quot;Ranked<br />
-      among the Top 5 Analytics Program in India&quot;</strong><br />
+      among the Top 3 Analytics Program in India&quot;</strong><br />
       <em>(by Analytics India Magazine)</em>.</div>
   </div>
   <div class="clear"></div>
@@ -80,17 +169,25 @@
   </tr>
   <tr> 
     <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;'>Email address<span style='color:red;'>*</span></td>-->
-    <td><select style='width:310px;border:0px;color:#adadad;' name='Preferred campus' class="textbox">
+    <td><select style='width:310px;border:0px;color:#adadad;'  name='LEADCF6' class="textbox">
             <option value=''>Select preferred campus</option>
             <option value='Chennai'>Chennai</option>
             <option value='Gurgaon'>Gurgaon</option>
           </select></td>
   </tr>
+  
+  <tr style='display:none;' >
+       <!--<td nowrap='nowrap' align='left'  style='font-size:12px;font-family:Arial;width:200px;' width='50%'>UTM_Campaign </td>-->
+      <td><input type='text' maxlength='96' name='LEADCF5' value='GoogleAdwords' id="utmcampaign">
+        </input></td>
+    </tr>
+  
+  
   <tr>
     <td colspan='2' align='center' style='padding-top: 15px;'><input type='submit' value='' class="orange-button" /></td>
   </tr>
 </table>
-<script> var mndFileds=new Array('Last Name','Email','Phone','Preferred campus');var fldLangVal=new Array('Full name','Email','Mobile','Preferred campus');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads788461000000674009'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}}}}</script>
+<script> var mndFileds=new Array('Last Name','Email','Phone');var fldLangVal=new Array('Full name','Email','Mobile');function reloadImg(){if(document.getElementById('imgid').src.indexOf('&d') !== -1 ){document.getElementById('imgid').src=document.getElementById('imgid').src.substring(0,document.getElementById('imgid').src.indexOf('&d'))+'&d'+new Date().getTime();}else{document.getElementById('imgid').src = document.getElementById('imgid').src+'&d'+new Date().getTime();}}function checkMandatery(){for(i=0;i<mndFileds.length;i++){ var fieldObj=document.forms['WebToLeads788461000000674009'][mndFileds[i]];if(fieldObj) {if(((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0){alert(fldLangVal[i] +' cannot be empty'); fieldObj.focus(); return false;}else if(fieldObj.nodeName=='SELECT'){if(fieldObj.options[fieldObj.selectedIndex].value=='-None-'){alert(fldLangVal[i] +' cannot be none'); fieldObj.focus(); return false;}} else if(fieldObj.type =='checkbox'){ if (fieldObj.checked == false){     alert('Please accept  '+fldLangVal[i]); fieldObj.focus();return false;}}}}}</script>
 </form>
 </div>
 <!--<div class="smalltext" style="width:320px;margin:0px auto;text-align:right">We respect your <a href="#policy" class="fancybox"> privacy</a>. </div>
